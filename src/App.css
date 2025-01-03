@@ -9,3 +9,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+.header-and-presentation{
+  height: 100vh;
+}
