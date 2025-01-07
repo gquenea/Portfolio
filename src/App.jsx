@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Presentation from "./components/presentation/Presentation";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
+import Experiences from "./components/experiences/Experciences";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Presentation />
         <Skills />
         <Projects />
+        <Experiences />
       </main>
     </div>
   );
