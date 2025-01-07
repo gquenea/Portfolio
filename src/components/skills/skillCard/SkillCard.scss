@@ -1,0 +1,49 @@
+.skillCard {
+    border: solid white;
+    padding: 30px;
+
+    .card-header{
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 30px;
+        }
+
+        h3{
+            position: relative;
+            font-size: 1.7em;
+        }
+
+        h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            width: 60%;
+            height: 10px;
+            background-color: var(--bar-color);
+            z-index: -1;
+          }
+    }
+
+    .card-content {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+
+        .decoration{
+            color: gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .vertical-line {
+                margin: 10px 0;
+                width: 1px;
+                background-color: gray;
+                height: 85%;
+            }
+        }
+    }
+}

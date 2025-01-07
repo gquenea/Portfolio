@@ -1,8 +1,10 @@
-import "./Presentation.css";
+import "./Presentation.scss";
+import quotationMark from "../../assets/quotationMark.png";
 
 export default function Presentation() {
   return (
     <div className="presentation">
+      <img src={quotationMark} alt="Ouverture de guillemet" />
       <p>
         Depuis maintenant quelques années je me suis reconverti dans un domaine
         qui reflete ma passion pour la technologie, le milieu de l'IT. J'ai
@@ -14,6 +16,7 @@ export default function Presentation() {
         d'integrer une équipe de test et de perfectionner mes connaissances pour
         à terme devenir lead test.
       </p>
+      <img src={quotationMark} alt="Ouverture de guillemet" className="quote-right" />
     </div>
   );
 }

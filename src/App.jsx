@@ -1,7 +1,9 @@
-import "./App.css";
+import "./App.scss";
 import Banner from "./components/banner/Banner";
 import Header from "./components/header/Header";
 import Presentation from "./components/presentation/Presentation";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       </div>
       <main className="main-container">
         <Presentation />
+        <Skills />
+        <Projects />
       </main>
     </div>
   );

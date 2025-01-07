@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+
+    div {
+      position: absolute;
+      top: 70px;
+      left: 40px;
+      font-weight: bold;
+      font-size: 30px;
+      color: #66D9ED;
+      cursor: pointer;
+      transition: filter 0.4s ease;
+
+      .point {
+        color: white;
+      }
+
+      .underscore {
+        color: #9B37FF;
+      }
+    }
+
+    div:hover {
+      filter: brightness(0.7);
+    }
+
+    nav {
+      flex: 1;
+      text-align: center;
+      margin: 40px 0;
+
+      ul {
+        display: inline-flex;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+          margin: 0 40px;
+          font-size: 20px;
+          cursor: pointer;
+          transition: color 0.5s ease;
+
+          &:hover {
+            color: #66D9ED;
+          }
+        }
+      }
+    }
+  }
+

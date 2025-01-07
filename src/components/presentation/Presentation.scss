@@ -1,0 +1,19 @@
+.presentation{
+    margin: 50px 100px;
+    font-size: 1.3rem;
+
+    p{
+        text-indent: 50px;
+    }
+
+    .quote-right {
+        float: right; /* Place l'image à droite */
+      }
+
+}
+
+.presentation::after {
+    content: "";
+    display: table;
+    clear: both; /* Nettoie le flottement pour que le texte suivant ne soit pas affecté */
+  }
