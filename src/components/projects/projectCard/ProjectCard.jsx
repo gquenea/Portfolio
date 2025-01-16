@@ -3,20 +3,24 @@ import "./ProjectCard.scss";
 
 export default function ProjectCard({
   project,
-  isHovered,
   isFaded,
   onMouseEnter,
   onMouseLeave,
+  onClick,
 }) {
   return (
     <div
-      className={`projectCard ${isFaded ? "faded" : ""}`} // Applique 'faded' aux autres cartes
-      onMouseEnter={onMouseEnter} // Met à jour l'état lors du survol
-      onMouseLeave={onMouseLeave} // Réinitialise l'état lors du départ de la souris
+      className={`projectCard ${isFaded ? "faded" : ""}`}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      onClick={onClick}
     >
-      <img src={project.image} alt={project.name} />
+      <img src={project.mainImage} alt={project.name} />
       <div className="title-and-description">
-        <h4>{project.name}</h4>
+        <div className="title-and-type">
+          <h4>{project.name}</h4>
+          <p>{project.type}</p>
+        </div>
         <p>{project.description}</p>
       </div>
     </div>

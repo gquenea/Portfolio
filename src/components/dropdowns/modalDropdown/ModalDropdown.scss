@@ -1,0 +1,33 @@
+.dropdown-title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+        transition: transform 0.4s ease;
+    }
+
+    .rotated {
+        transform: rotate(180deg);
+    }
+}
+
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+
+    &.open {
+        max-height: 500px;
+        opacity: 1;
+      }
+
+    &.closed {
+        max-height: 0;
+        opacity: 0;
+    }
+  }
+
+  

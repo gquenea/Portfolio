@@ -1,0 +1,111 @@
+.experience-dropdown {
+    margin: 0 200px;
+
+    .dropdown-title-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        background-color: #201F23;
+        border-radius: 10px;
+        padding: 0 30px;
+
+        h4 {
+            font-size: 1.2em;
+        }
+
+        .date {
+            font-size: 0.9em;
+            color: #b3b3b3;
+        }
+
+        img {
+          transition: transform 0.4s ease;
+        }
+
+        .rotated {
+            transform: rotate(180deg);
+        }
+    }
+
+    .date-and-arrow {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .dropdown-content {
+        color: black;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        background-color: #FBD6A9;
+        padding: 10px 30px;
+        border-radius: 10px;
+        transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease;
+
+        &.open {
+            margin: 20px 0;
+            max-height: 500px;
+            opacity: 1;
+        }
+
+        &.closed {
+            max-height: 0;
+            opacity: 0;
+        }
+
+        .content-header {
+            display: flex;
+            gap: 40px;
+            font-size: 1em;
+
+            .enterprise-name {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .localisation {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+
+        .description-and-logo {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+
+            .description {
+                margin: 0;
+                width: 80%;
+            }
+
+            .logo {
+                width: 20%;
+                text-align: right;
+
+                img {
+                    width: 200px;
+                }
+            }
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                color: white;
+                background-color: #201F23;
+                padding: 10px 20px;
+                border-radius: 50px;
+            }
+        }
+    }
+}

@@ -1,53 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import Modal from "react-modal";
 import "./Projects.scss";
 import ProjectCard from "./projectCard/ProjectCard.jsx";
-import bookiImg from "../../assets/booki.png";
+import projects from "../../data/projects";
+import ProjectModal from "./projectModal/ProjectModal.jsx";
 
 export default function Projects() {
-  const [hoveredIndex, setHoveredIndex] = useState(null); // État pour suivre la carte survolée
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
-  const projects = [
-    {
-      image: bookiImg,
-      name: "Booki",
-      description: "Projet de blabla pour blabla qui permet à terme de blabla.",
-    },
-    {
-      image: bookiImg,
-      name: "EcoBlissBath",
-      description: "Un autre projet de blabla pour blabla.",
-    },
-    {
-      image: bookiImg,
-      name: "Kasa",
-      description: "Encore un projet de blabla.",
-    },
-    {
-      image: bookiImg,
-      name: "Sophie Bluel",
-      description: "Encore un projet de blabla.",
-    },
-    {
-      image: bookiImg,
-      name: "Print-it",
-      description: "Encore un projet de blabla.",
-    },
-    {
-      image: bookiImg,
-      name: "The dojo",
-      description: "Encore un projet de blabla.",
-    },
-    {
-      image: bookiImg,
-      name: "My-money",
-      description: "Encore un projet de blabla.",
-    },
-    {
-      image: bookiImg,
-      name: "Magic-memory",
-      description: "Encore un projet de blabla.",
-    },
-  ];
+  Modal.setAppElement("#root");
 
   const handleMouseEnter = (index) => {
     setHoveredIndex(index);
@@ -57,6 +20,13 @@ export default function Projects() {
     setHoveredIndex(null);
   };
 
+  const openModal = (project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <div className="projects">
       <h2>Projets</h2>
@@ -65,13 +35,21 @@ export default function Projects() {
           <ProjectCard
             key={index}
             project={project}
-            isHovered={index === hoveredIndex} // Vérifie si c'est la carte survolée
-            isFaded={hoveredIndex !== null && index !== hoveredIndex} // Applique 'faded' aux autres cartes quand une carte est survolée
-            onMouseEnter={() => handleMouseEnter(index)} // Met à jour l'index lors du survol
-            onMouseLeave={handleMouseLeave} // Réinitialise l'état lors du départ de la souris
+            isHovered={index === hoveredIndex}
+            isFaded={hoveredIndex !== null && index !== hoveredIndex}
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => openModal(project)} // Ouvre la modal au clic
           />
         ))}
       </div>
+
+      {/* Modal */}
+      <ProjectModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        project={selectedProject}
+      />
     </div>
   );
 }
