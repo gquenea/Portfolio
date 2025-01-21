@@ -4,7 +4,7 @@ import skills from "../../data/skills";
 
 export default function Skills() {
   return (
-    <div className="skills">
+    <div id="skills">
       <h2>Compétences</h2>
       <div className="cards-container">
         {skills.map((skill, index) => (

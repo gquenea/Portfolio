@@ -6,18 +6,30 @@ export default function Header() {
   };
 
   return (
-    <div className="header">
+    <div id="header">
       <div onClick={handleClick}>
         QueneaGislain<span className="point">.</span>
         <span className="underscore">_</span>
       </div>
       <nav>
         <ul>
-          <li>{"// Accueil"}</li>
-          <li>{"// Compétences"}</li>
-          <li>{"// Projets"}</li>
-          <li>{"// Expériences"}</li>
-          <li>{"// Contact"}</li>
+          <li>
+            <a href="#header" onClick={handleClick}>
+              {"// Accueil"}
+            </a>
+          </li>
+          <li>
+            <a href="#skills">{"// Compétences"}</a>
+          </li>
+          <li>
+            <a href="#projects">{"// Projets"}</a>
+          </li>
+          <li>
+            <a href="#experiences">{"// Expériences"}</a>
+          </li>
+          <li>
+            <a href="#contact">{"// Contact"}</a>
+          </li>
         </ul>
       </nav>
     </div>

@@ -1,6 +1,6 @@
-import testLogo from "../assets/testLogo.png";
-import devLogo from "../assets/codeLogo.png";
-import organisationLogo from "../assets/organisationLogo.png";
+import testLogo from "../assets/skillsLogo/testLogo.png";
+import devLogo from "../assets/skillsLogo/codeLogo.png";
+import organisationLogo from "../assets/skillsLogo/organisationLogo.png";
 
 const skills = [
     {

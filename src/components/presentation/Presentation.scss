@@ -1,4 +1,4 @@
-.presentation{
+#presentation{
     margin: 50px 100px 0 50px;
     font-size: 1.3rem;
 
@@ -10,10 +10,9 @@
         float: right; /* Place l'image à droite */
       }
 
+      &::after {
+          content: "";
+          display: table;
+          clear: both; /* Nettoie le flottement pour que le texte suivant ne soit pas affecté */
+        }
 }
-
-.presentation::after {
-    content: "";
-    display: table;
-    clear: both; /* Nettoie le flottement pour que le texte suivant ne soit pas affecté */
-  }

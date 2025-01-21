@@ -2,7 +2,7 @@ import "./SkillCard.scss";
 
 export default function SkillCard({ skill }) {
   return (
-    <div className="skillCard">
+    <div id="skillCard">
       <div className="card-header">
         <img src={skill.icon} alt={skill.name} />
         <h3 style={{ "--bar-color": skill.underlineColor }}>{skill.name}</h3>

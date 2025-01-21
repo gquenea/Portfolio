@@ -18,5 +18,22 @@ h2 {
   color: #FBD6A9;
   font-size: 3.5em;
   text-align: center;
-  margin-top: 120px;
+  margin: 120px 0 80px 0;
+}
+
+body::-webkit-scrollbar {
+  width: 15px; /* Largeur de la scrollbar */
+}
+body::-webkit-scrollbar-thumb {
+  background: #5c6162;
+  border-radius: 10px;
+
+  &:hover {
+    background: #46494a;
+  }
+}
+
+body::-webkit-scrollbar-track {
+  background: #1A191D;
+  border-radius: 10px;
 }

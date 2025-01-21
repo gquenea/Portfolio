@@ -3,7 +3,7 @@ import quotationMark from "../../assets/quotationMark.png";
 
 export default function Presentation() {
   return (
-    <div className="presentation">
+    <div id="presentation">
       <img src={quotationMark} alt="Ouverture de guillemet" />
       <p>
         Depuis maintenant quelques années je me suis reconverti dans un domaine

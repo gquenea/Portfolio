@@ -1,8 +1,8 @@
 import ReactModal from "react-modal";
 import "./ProjectModal.scss";
-import baseScreen from "../../../assets/baseScreen.png";
-import cross from "../../../assets/cross.png";
-import gitHubLogo from "../../../assets/gitHubLogo.png";
+import baseScreen from "../../../assets/modalPictures/baseScreen.png";
+import cross from "../../../assets/modalPictures/cross.png";
+import gitHubLogo from "../../../assets/modalPictures/gitHubLogo.png";
 import ModalDropdown from "../../dropdowns/modalDropdown/ModalDropdown";
 
 export default function ProjectModal({ project, isOpen, onClose }) {

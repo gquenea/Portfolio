@@ -1,11 +1,11 @@
-import bookiImg from "../assets/ProjectsPictures/booki.png";
-import ecoBlissBath from "../assets/ProjectsPictures/ecoBlissBath.png";
-import kasa from "../assets/ProjectsPictures/kasa.png";
-import sophieBluel from "../assets/ProjectsPictures/sophieBluel.png";
-import menuMaker from "../assets/ProjectsPictures/menuMaker.png";
-import theDojo from "../assets/ProjectsPictures/theDojo.png";
-import myMoney from "../assets/ProjectsPictures/myMoney.png";
-import magicMemory from "../assets/ProjectsPictures/magicMemory.png";
+import bookiImg from "../assets/projectsPictures/booki.png";
+import ecoBlissBath from "../assets/projectsPictures/ecoBlissBath.png";
+import kasa from "../assets/projectsPictures/kasa.png";
+import sophieBluel from "../assets/projectsPictures/sophieBluel.png";
+import menuMaker from "../assets/projectsPictures/menuMaker.png";
+import theDojo from "../assets/projectsPictures/theDojo.png";
+import myMoney from "../assets/projectsPictures/myMoney.png";
+import magicMemory from "../assets/projectsPictures/magicMemory.png";
 
 const projects = [
   {

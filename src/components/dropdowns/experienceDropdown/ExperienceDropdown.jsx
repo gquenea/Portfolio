@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./ExperienceDropdown.scss";
-import dropdownArrow from "../../../assets/dropdownArrow.png";
-import buildingIcon from "../../../assets/buildingIcon.png"
-import pinIcon from "../../../assets/pinIcon.png"
+import dropdownArrow from "../../../assets/dropdownIcons/dropdownArrow.png";
+import buildingIcon from "../../../assets/dropdownIcons/buildingIcon.png";
+import pinIcon from "../../../assets/dropdownIcons/pinIcon.png";
 
 export default function ExperienceDropdown({
   title,
@@ -18,7 +18,7 @@ export default function ExperienceDropdown({
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   return (
-    <div className="experience-dropdown">
+    <div id="experience-dropdown">
       <div className="dropdown-title-box" onClick={toggleDropdown}>
         <div>
           <h4>{title}</h4>
@@ -33,26 +33,26 @@ export default function ExperienceDropdown({
         </div>
       </div>
       <div className={`dropdown-content ${isOpen ? "open" : "closed"}`}>
-        <div className="content-header">
-          <div className="enterprise-name">
-            <img src={buildingIcon} alt="Logo d'entreprise'" />
-            <p>{enterpriseName}</p>
+        <div className="text-information">
+          <div className="content-header">
+            <div className="enterprise-name">
+              <img src={buildingIcon} alt="Icon d'entreprise'" />
+              <p>{enterpriseName}</p>
+            </div>
+            <div className="localisation">
+              <img src={pinIcon} alt="Icon de localisation" />
+              <p>{localisation}</p>
+            </div>
           </div>
-          <div className="localisation">
-            <img src={pinIcon} alt="Logo de localisation" />
-            <p>{localisation}</p>
-          </div>
-        </div>
-        <div className="description-and-logo">
           <p className="description">{description}</p>
-          <div className="logo">
-            <img
-              src={enterpriseLogo}
-              alt={`Logo de l'entreprise ${enterpriseName}`}
-            />
-          </div>
+          <ul className="skills">{skills}</ul>
         </div>
-        <ul className="skills">{skills}</ul>
+        <div className="logo">
+          <img
+            src={enterpriseLogo}
+            alt={`Logo de l'entreprise ${enterpriseName}`}
+          />
+        </div>
       </div>
     </div>
   );

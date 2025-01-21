@@ -28,7 +28,7 @@ export default function Projects() {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="projects">
+    <div id="projects">
       <h2>Projets</h2>
       <div className="cards-container">
         {projects.map((project, index) => (

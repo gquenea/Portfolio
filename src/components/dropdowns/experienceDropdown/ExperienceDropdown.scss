@@ -1,4 +1,4 @@
-.experience-dropdown {
+#experience-dropdown {
     margin: 0 200px;
 
     .dropdown-title-box {
@@ -6,6 +6,7 @@
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         background-color: #201F23;
         border-radius: 10px;
         padding: 0 30px;
@@ -36,12 +37,16 @@
 
     .dropdown-content {
         color: black;
+        display: flex;
+        align-items: center;
+        gap: 20px;
         max-height: 0;
         overflow: hidden;
         opacity: 0;
         background-color: #FBD6A9;
         padding: 10px 30px;
         border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease;
 
         &.open {
@@ -59,39 +64,62 @@
             display: flex;
             gap: 40px;
             font-size: 1em;
+            font-weight: bold;
+            margin-top: 10px;
 
             .enterprise-name {
                 display: flex;
                 gap: 10px;
                 align-items: center;
+                
+                p {
+                    margin: 0;
+                }
             }
 
             .localisation {
                 display: flex;
                 gap: 10px;
                 align-items: center;
-            }
-        }
-
-        .description-and-logo {
-            display: flex;
-            gap: 40px;
-            align-items: center;
-
-            .description {
                 margin: 0;
-                width: 80%;
-            }
 
-            .logo {
-                width: 20%;
-                text-align: right;
-
-                img {
-                    width: 200px;
+                p {
+                    margin: 0;
                 }
             }
         }
+
+        .text-information {
+            width: 80%;
+        }
+
+        .logo {
+            width: 20%;
+
+            img {
+                width: 200px;
+            }
+        }
+
+        // .description-and-logo {
+        //     display: flex;
+        //     gap: 40px;
+        //     align-items: center;
+
+        //     .description {
+        //         margin: 0;
+        //         width: 80%;
+        //     }
+
+        //     .logo {
+        //         width: 20%;
+        //         text-align: right;
+
+        //         img {
+        //             width: 200px;
+        //         }
+        //     }
+        // }
 
         .skills {
             display: flex;

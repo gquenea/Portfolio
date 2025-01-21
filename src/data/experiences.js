@@ -15,9 +15,9 @@ const experiences = [
     skills: [
       "Plans de test",
       "Scénarios de tests",
-      "automatisation de test (Cypress)",
-      "analyse des résultats de tests",
+      "Analyse des résultats de tests",
       "Gestion de projet",
+      "Automatisation de test (Cypress)",
     ],
   },
   {
@@ -28,7 +28,7 @@ const experiences = [
     description:
       "Développeur full stack au sein d'une startup de création de solution logiciel pour des entreprise de la restauration et de l'hôtelerie. L'application sur laquelle j'intervenais consistait à informatiser et à facilité la maintenance des établissements, que ce soir pour le suivi des équipements, la gestion des intervention ou la supervision des contrats.",
     enterpriseLogo: lamsterLogo,
-    skills: ["React", "NodeJs", "Base de données", "Agile", "infrastructure"],
+    skills: ["React", "NodeJs", "Base de données", "Agile", "Infrastructure"],
   },
   {
     title: "Développeur Full Stack",

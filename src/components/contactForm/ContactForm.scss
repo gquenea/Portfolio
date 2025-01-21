@@ -1,0 +1,88 @@
+#contactForm {
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 200px 150px 200px;
+
+        label {
+            display: none;
+        }
+
+        input, textarea {
+            margin: 15px 0;
+            border-radius: 10px;
+            background-color: #201F23;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            color: white;
+            font-family: 'Roboto Mono', monospace;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            
+
+            &:focus {
+                background-color: #FBD6A9;
+                border: none;
+                color: black;
+            }
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+
+        textarea {
+            height: 200px;
+            resize: none;
+
+        }
+
+        .submit {
+            background-color: #FBD6A9;
+            color: black;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid #FBD6A9;
+            transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+            
+            &:hover {
+                background-color: #201F23;
+                color: #FBD6A9;
+                border: 1px solid #FBD6A9;
+            }
+        }
+    }
+
+    .popup {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 20px 20px;
+        color: white;
+        border-radius: 10px;
+        font-size: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transform: translateY(-30px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        pointer-events: none;
+        z-index: 9999;
+      }
+      
+      .popup.success {
+        background-color: #155724;
+      }
+      
+      .popup.error {
+        background-color: #721c24;
+      }
+      
+      .popup.visible {
+        opacity: 1;
+        transform: translateY(0); /* Final de l'animation : popup en place */
+        pointer-events: all; /* Permet l'interaction après l'animation */
+      }
+}

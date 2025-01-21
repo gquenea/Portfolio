@@ -6,7 +6,7 @@ export default function Experiences() {
   console.log(experiences);
 
   return (
-    <div className="experiences">
+    <div id="experiences">
       <h2>Expériences</h2>
       {experiences.map((experience, index) => (
         <ExperienceDropdown
