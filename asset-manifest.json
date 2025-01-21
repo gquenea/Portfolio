@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ton-depot/static/css/main.275bcffd.css",
-    "main.js": "/ton-depot/static/js/main.2c91437f.js",
-    "static/media/banner.png": "/ton-depot/static/media/banner.7b1146a79dc83b3717d5.png",
-    "static/media/baseScreen.png": "/ton-depot/static/media/baseScreen.eb30033448c9de9c527a.png",
-    "static/media/magicMemory.png": "/ton-depot/static/media/magicMemory.f64eea2c28cda1aa0df5.png",
-    "static/media/kasa.png": "/ton-depot/static/media/kasa.5ddb2c36da142a932cdb.png",
-    "static/media/booki.png": "/ton-depot/static/media/booki.fd1e1347ed547144b94a.png",
-    "static/media/ocrLogo.png": "/ton-depot/static/media/ocrLogo.9e7774bd44089159f93f.png",
-    "static/media/hbLogo.webp": "/ton-depot/static/media/hbLogo.ee352859011d53f52a78.webp",
-    "static/media/dtekLogo.png": "/ton-depot/static/media/dtekLogo.c21e9438e01016e73873.png",
-    "static/media/ecoBlissBath.png": "/ton-depot/static/media/ecoBlissBath.f7b8ce636cb7cad0d76d.png",
-    "static/media/lamsterLogo.png": "/ton-depot/static/media/lamsterLogo.13521fe2982bc89f64bb.png",
-    "index.html": "/ton-depot/index.html",
-    "main.275bcffd.css.map": "/ton-depot/static/css/main.275bcffd.css.map",
-    "main.2c91437f.js.map": "/ton-depot/static/js/main.2c91437f.js.map"
+    "main.css": "//gquenea.github.io/portfolio/static/css/main.13233a1c.css",
+    "main.js": "//gquenea.github.io/portfolio/static/js/main.257a2f41.js",
+    "static/media/banner.png": "//gquenea.github.io/portfolio/static/media/banner.7b1146a79dc83b3717d5.png",
+    "static/media/baseScreen.png": "//gquenea.github.io/portfolio/static/media/baseScreen.eb30033448c9de9c527a.png",
+    "static/media/magicMemory.png": "//gquenea.github.io/portfolio/static/media/magicMemory.f64eea2c28cda1aa0df5.png",
+    "static/media/kasa.png": "//gquenea.github.io/portfolio/static/media/kasa.5ddb2c36da142a932cdb.png",
+    "static/media/booki.png": "//gquenea.github.io/portfolio/static/media/booki.fd1e1347ed547144b94a.png",
+    "static/media/ocrLogo.png": "//gquenea.github.io/portfolio/static/media/ocrLogo.9e7774bd44089159f93f.png",
+    "static/media/hbLogo.webp": "//gquenea.github.io/portfolio/static/media/hbLogo.ee352859011d53f52a78.webp",
+    "static/media/dtekLogo.png": "//gquenea.github.io/portfolio/static/media/dtekLogo.c21e9438e01016e73873.png",
+    "static/media/ecoBlissBath.png": "//gquenea.github.io/portfolio/static/media/ecoBlissBath.f7b8ce636cb7cad0d76d.png",
+    "static/media/lamsterLogo.png": "//gquenea.github.io/portfolio/static/media/lamsterLogo.13521fe2982bc89f64bb.png",
+    "index.html": "//gquenea.github.io/portfolio/index.html",
+    "main.13233a1c.css.map": "//gquenea.github.io/portfolio/static/css/main.13233a1c.css.map",
+    "main.257a2f41.js.map": "//gquenea.github.io/portfolio/static/js/main.257a2f41.js.map"
   },
   "entrypoints": [
-    "static/css/main.275bcffd.css",
-    "static/js/main.2c91437f.js"
+    "static/css/main.13233a1c.css",
+    "static/js/main.257a2f41.js"
   ]
 }
