@@ -82,7 +82,7 @@
       
       .popup.visible {
         opacity: 1;
-        transform: translateY(0); /* Final de l'animation : popup en place */
-        pointer-events: all; /* Permet l'interaction après l'animation */
+        transform: translateY(0);
+        pointer-events: all;
       }
 }

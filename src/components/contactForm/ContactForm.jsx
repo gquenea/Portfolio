@@ -19,7 +19,7 @@ export default function Contact() {
         () => {
           setMessage("Votre message a été envoyé avec succès !");
           setMessageType("success");
-          setIsVisible(true); // Afficher la popup de succès
+          setIsVisible(true);
           form.current.reset();
           setTimeout(() => {
             setIsVisible(false);
@@ -28,7 +28,7 @@ export default function Contact() {
         (error) => {
           setMessage("Une erreur est survenue. Veuillez réessayer plus tard.");
           setMessageType("error");
-          setIsVisible(true); // Afficher la popup de succès
+          setIsVisible(true);
           console.error("FAILED...", error.text);
           setTimeout(() => {
             setIsVisible(false);
