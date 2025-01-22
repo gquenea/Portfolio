@@ -1,6 +1,8 @@
+@import '../../../assets/styles/variables';
+
 .modal-content {
   position: relative;
-  background-color: #1A191D;
+  background-color: $primary-color;
   padding: 40px 40px 40px 50px;
   border-radius: 10px;
   width: 700px;
@@ -8,24 +10,15 @@
   outline: none;
   overflow-y: auto;
   scrollbar-gutter: stable;
-}
-.modal-content::-webkit-scrollbar {
-  width: 10px; /* Largeur de la scrollbar */
-}
-.modal-content::-webkit-scrollbar-thumb {
-  background: #5c6162; /* Couleur de la barre de défilement */
-  border-radius: 10px; /* Coins arrondis */
+
+  transform: scale(0);
+  opacity: 0;
+  animation: scaleIn 0.4s forwards;
 }
 
-.modal-content::-webkit-scrollbar-thumb:hover {
-  background: #46494a; /* Couleur au survol */
+.modal-content.closing {
+  animation: scaleOut 0.4s forwards;
 }
-
-.modal-content::-webkit-scrollbar-track {
-  background: #1A191D; /* Couleur de l'arrière-plan de la scrollbar */
-  border-radius: 10px; /* Coins arrondis */
-}
-
 
 .modal-overlay {
   background-color: rgba(0, 0, 0, 0.5);
@@ -37,6 +30,52 @@
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: 0; /* Masquer l'overlay au début */
+  animation: fadeInOverlay 0.4s forwards;
+}
+
+.modal-overlay.closing {
+  animation: fadeOutOverlay 0.4s forwards;
+}
+
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutOverlay {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0); /* Point invisible */
+    opacity: 0;
+  }
+  to {
+    transform: scale(1); /* Taille normale */
+    opacity: 1;
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0); /* Réduit à un point */
+    opacity: 0;
+  }
 }
 
 .link-and-close {
@@ -46,7 +85,7 @@
   .link {
     display: flex;
     font-size: 20px;
-    color: #66D9ED;
+    color: $light-blue-color;
     cursor: pointer;
     font-weight: bold;
     letter-spacing: 2px;
@@ -67,7 +106,7 @@
   }
 
   .close-button {
-    background-color: #1A191D;
+    background-color: $primary-color;
     border: none;
     cursor: pointer;
     display: flex;
@@ -80,9 +119,7 @@
   }
 }
 
-
-
-.modal-header{
+.modal-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -99,12 +136,12 @@
     justify-content: center;
     width: 60%;
   }
-  
+
   .base-screen {
     width: 350px;
     display: block;
   }
-  
+
   .main-image {
     position: absolute;
     top: 20%; /* Ajustez pour aligner avec l'écran */
@@ -112,7 +149,6 @@
     width: 50%; /* Ajustez pour s'adapter à l'écran */
     height: auto;
   }
-
 }
 
 .modal-body {
@@ -122,3 +158,19 @@
   }
 }
 
+.modal-content::-webkit-scrollbar {
+  width: 10px; /* Largeur de la scrollbar */
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background: #5c6162; /* Couleur de la barre de défilement */
+  border-radius: 10px; /* Coins arrondis */
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #46494a; /* Couleur au survol */
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: $primary-color; /* Couleur de l'arrière-plan de la scrollbar */
+  border-radius: 10px; /* Coins arrondis */
+}

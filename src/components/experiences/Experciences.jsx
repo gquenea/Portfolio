@@ -2,11 +2,9 @@ import ExperienceDropdown from "../dropdowns/experienceDropdown/ExperienceDropdo
 import "./Experiences.scss";
 import experiences from "../../data/experiences";
 
-export default function Experiences() {
-  console.log(experiences);
-
+export default function Experiences({ aos }) {
   return (
-    <div id="experiences">
+    <div id="experiences" data-aos={aos}>
       <h2>Expériences</h2>
       {experiences.map((experience, index) => (
         <ExperienceDropdown

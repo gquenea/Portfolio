@@ -7,20 +7,32 @@ import Projects from "./components/projects/Projects";
 import Experiences from "./components/experiences/Experciences";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    // Initialisation d'AOS
+    AOS.init({
+      duration: 700, // Durée de l'animation en ms
+      easing: "ease-in-out", // Type d'animation
+      once: true, // L'animation se déclenche uniquement une fois
+    });
+  }, []);
+
   return (
-    <div className="App">
+    <div id="App">
       <div className="header-and-banner">
         <Header />
         <Banner />
       </div>
       <main className="main-container">
-        <Presentation />
-        <Skills />
-        <Projects />
-        <Experiences />
-        <Contact />
+        <Presentation aos="fade-up" />
+        <Skills aos="fade-up" />
+        <Projects aos="fade-up" />
+        <Experiences aos="fade-up" />
+        <Contact aos="fade-up" />
       </main>
       <Footer />
     </div>

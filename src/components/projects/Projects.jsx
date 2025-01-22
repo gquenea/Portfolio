@@ -5,7 +5,7 @@ import ProjectCard from "./projectCard/ProjectCard.jsx";
 import projects from "../../data/projects";
 import ProjectModal from "./projectModal/ProjectModal.jsx";
 
-export default function Projects() {
+export default function Projects({ aos }) {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -28,19 +28,24 @@ export default function Projects() {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div id="projects">
+    <div id="projects" data-aos={aos}>
       <h2>Projets</h2>
       <div className="cards-container">
         {projects.map((project, index) => (
-          <ProjectCard
+          <div
             key={index}
-            project={project}
-            isHovered={index === hoveredIndex}
-            isFaded={hoveredIndex !== null && index !== hoveredIndex}
-            onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={handleMouseLeave}
-            onClick={() => openModal(project)} // Ouvre la modal au clic
-          />
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
+          >
+            <ProjectCard
+              project={project}
+              isHovered={index === hoveredIndex}
+              isFaded={hoveredIndex !== null && index !== hoveredIndex}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => openModal(project)}
+            />
+          </div>
         ))}
       </div>
 

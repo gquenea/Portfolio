@@ -4,15 +4,26 @@ import baseScreen from "../../../assets/modalPictures/baseScreen.png";
 import cross from "../../../assets/modalPictures/cross.png";
 import gitHubLogo from "../../../assets/modalPictures/gitHubLogo.png";
 import ModalDropdown from "../../dropdowns/modalDropdown/ModalDropdown";
+import { useState } from "react";
 
 export default function ProjectModal({ project, isOpen, onClose }) {
+  const [isClosing, setIsClosing] = useState(false);
+
+  const handleClose = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsClosing(false);
+      onClose();
+    }, 400); // La durée doit correspondre à celle de l'animation
+  };
+
   if (!project) return null;
   return (
     <ReactModal
       isOpen={isOpen}
-      onRequestClose={onClose}
-      className="modal-content"
-      overlayClassName="modal-overlay"
+      onRequestClose={handleClose}
+      className={`modal-content ${isClosing ? "closing" : ""}`}
+      overlayClassName={`modal-overlay ${isClosing ? "closing" : ""}`}
     >
       <div className="link-and-close">
         <a
@@ -24,7 +35,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
           <img src={gitHubLogo} alt="Logo de gitHub" />
           <p>GitHub</p>
         </a>
-        <button className="close-button" onClick={onClose}>
+        <button className="close-button" onClick={handleClose}>
           <img src={cross} alt="Croix de fermeture de modal" />
         </button>
       </div>
@@ -39,13 +50,6 @@ export default function ProjectModal({ project, isOpen, onClose }) {
             src={baseScreen}
             alt="Ecran d'ordinateur"
           />
-          {/* {project.mainImage && (
-          <img
-            className="main-image"
-            src={project.mainImage}
-            alt={project.name}
-          />
-        )} */}
         </div>
       </div>
       <div className="modal-body">

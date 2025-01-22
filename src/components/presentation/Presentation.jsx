@@ -1,9 +1,9 @@
 import "./Presentation.scss";
 import quotationMark from "../../assets/quotationMark.png";
 
-export default function Presentation() {
+export default function Presentation({ aos }) {
   return (
-    <div id="presentation">
+    <div id="presentation" data-aos={aos}>
       <img src={quotationMark} alt="Ouverture de guillemet" />
       <p>
         Depuis maintenant quelques années je me suis reconverti dans un domaine
@@ -16,7 +16,11 @@ export default function Presentation() {
         d'integrer une équipe de test et de perfectionner mes connaissances pour
         à terme devenir lead test.
       </p>
-      <img src={quotationMark} alt="Ouverture de guillemet" className="quote-right" />
+      <img
+        src={quotationMark}
+        alt="Ouverture de guillemet"
+        className="quote-right"
+      />
     </div>
   );
 }

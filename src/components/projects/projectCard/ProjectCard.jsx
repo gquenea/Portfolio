@@ -7,6 +7,8 @@ export default function ProjectCard({
   onMouseEnter,
   onMouseLeave,
   onClick,
+  aos,
+  aosDelay,
 }) {
   return (
     <div
@@ -14,6 +16,8 @@ export default function ProjectCard({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       onClick={onClick}
+      data-aos={aos} // Animation de AOS
+      data-aos-delay={aosDelay} // Décalage pour chaque carte
     >
       <img src={project.mainImage} alt={project.name} />
       <div className="title-and-description">

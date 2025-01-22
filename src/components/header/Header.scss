@@ -1,9 +1,27 @@
+@import '../../assets/styles/variables';
+
 #header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgba(26, 25, 29, 1);
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.5s ease, background-color 0.5s ease;
+
+  &.scroll-started {
+    top: -140px;
+  }
+
+  &.scrolled {
+    position: fixed;
+    top: 0;
+    background-color: rgba(26, 25, 29, 0.85);
+    backdrop-filter: blur(10px);
+  }
 
     div {
       position: absolute;
@@ -11,7 +29,7 @@
       left: 40px;
       font-weight: bold;
       font-size: 30px;
-      color: #66D9ED;
+      color: $light-blue-color;
       cursor: pointer;
       transition: filter 0.3s ease;
 
@@ -45,7 +63,7 @@
           transition: color 0.3s ease;
 
           &:hover {
-            color: #66D9ED;
+            color: $light-blue-color;
           }
 
           a {
@@ -57,3 +75,6 @@
     }
   }
 
+.header-container {
+  height: 140px;
+}

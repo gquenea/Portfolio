@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables';
+
 #contactForm {
 
     form {
@@ -13,7 +15,7 @@
             margin: 15px 0;
             border-radius: 10px;
             background-color: #201F23;
-            border: none;
+            border: 1px solid #201F23;
             padding: 15px 30px;
             font-size: 1.5em;
             color: white;
@@ -22,13 +24,17 @@
             
 
             &:focus {
-                background-color: #FBD6A9;
-                border: none;
+                background-color: $secondary-color;
+                border: 1px solid #201F23;
                 color: black;
             }
 
             &:focus-visible {
                 outline: none;
+            }
+
+            &:hover {
+                border: 1px solid $secondary-color;
             }
         }
 
@@ -39,50 +45,50 @@
         }
 
         .submit {
-            background-color: #FBD6A9;
+            background-color: $secondary-color;
             color: black;
             cursor: pointer;
             font-weight: bold;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border: 1px solid #FBD6A9;
+            border: 1px solid $secondary-color;
             transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 
             
             &:hover {
                 background-color: #201F23;
-                color: #FBD6A9;
-                border: 1px solid #FBD6A9;
+                color: $secondary-color;
+                border: 1px solid $secondary-color;
             }
         }
     }
 
-    .popup {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        padding: 20px 20px;
-        color: white;
-        border-radius: 10px;
-        font-size: 16px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        opacity: 0;
-        transform: translateY(-30px);
-        transition: opacity 0.5s ease, transform 0.5s ease;
-        pointer-events: none;
-        z-index: 9999;
-      }
-      
-      .popup.success {
-        background-color: #155724;
-      }
-      
-      .popup.error {
-        background-color: #721c24;
-      }
-      
-      .popup.visible {
-        opacity: 1;
-        transform: translateY(0);
-        pointer-events: all;
-      }
+}
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.popup.success {
+    background-color: #155724;
+}
+
+.popup.error {
+    background-color: #721c24;
+}
+
+.popup.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
 }

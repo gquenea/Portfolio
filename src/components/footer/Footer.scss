@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables';
+
 #footer {
     background-color: #201F23;
     margin-top: 100px;
@@ -7,7 +9,7 @@
 
     p {
         font-size: 1.1em;
-        color: #66D9ED;
+        color: $light-blue-color;
         margin: 0;
     }
 }
