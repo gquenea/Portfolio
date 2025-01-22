@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "//gquenea.github.io/portfolio/static/css/main.13233a1c.css",
-    "main.js": "//gquenea.github.io/portfolio/static/js/main.257a2f41.js",
+    "main.css": "//gquenea.github.io/portfolio/static/css/main.2844b2dc.css",
+    "main.js": "//gquenea.github.io/portfolio/static/js/main.b0a1a057.js",
     "static/media/banner.png": "//gquenea.github.io/portfolio/static/media/banner.7b1146a79dc83b3717d5.png",
     "static/media/baseScreen.png": "//gquenea.github.io/portfolio/static/media/baseScreen.eb30033448c9de9c527a.png",
     "static/media/magicMemory.png": "//gquenea.github.io/portfolio/static/media/magicMemory.f64eea2c28cda1aa0df5.png",
@@ -13,11 +13,11 @@
     "static/media/ecoBlissBath.png": "//gquenea.github.io/portfolio/static/media/ecoBlissBath.f7b8ce636cb7cad0d76d.png",
     "static/media/lamsterLogo.png": "//gquenea.github.io/portfolio/static/media/lamsterLogo.13521fe2982bc89f64bb.png",
     "index.html": "//gquenea.github.io/portfolio/index.html",
-    "main.13233a1c.css.map": "//gquenea.github.io/portfolio/static/css/main.13233a1c.css.map",
-    "main.257a2f41.js.map": "//gquenea.github.io/portfolio/static/js/main.257a2f41.js.map"
+    "main.2844b2dc.css.map": "//gquenea.github.io/portfolio/static/css/main.2844b2dc.css.map",
+    "main.b0a1a057.js.map": "//gquenea.github.io/portfolio/static/js/main.b0a1a057.js.map"
   },
   "entrypoints": [
-    "static/css/main.13233a1c.css",
-    "static/js/main.257a2f41.js"
+    "static/css/main.2844b2dc.css",
+    "static/js/main.b0a1a057.js"
   ]
 }
