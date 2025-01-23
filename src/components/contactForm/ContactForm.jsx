@@ -13,7 +13,7 @@ export default function ContactForm() {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_ka02e94", "emplate_wfa5754", form.current, {
+      .sendForm("service_ka02e94", "template_wfa5754", form.current, {
         publicKey: "S8o_Q3PDt7zQeIMyI",
       })
       .then(

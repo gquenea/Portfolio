@@ -31,7 +31,7 @@ export default function Contact({ aos }) {
           <p>Github</p>
         </a>
         <a
-          href="/CV-Quenea-Gislain.pdf"
+          href="CV-Quenea-Gislain.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="cv"

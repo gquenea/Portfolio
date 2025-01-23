@@ -57,9 +57,7 @@ export default function LegalNoticesModal({ isOpen, onClose }) {
 
         <h3>6. Cookies</h3>
         <p>
-          Ce site peut utiliser des cookies pour améliorer l'expérience
-          utilisateur. Vous pouvez désactiver l'utilisation des cookies dans les
-          paramètres de votre navigateur.
+          Ce site peut n'utilise pas de Cookies.
         </p>
       </div>
     </Modal>
