@@ -103,26 +103,6 @@
             }
         }
 
-        // .description-and-logo {
-        //     display: flex;
-        //     gap: 40px;
-        //     align-items: center;
-
-        //     .description {
-        //         margin: 0;
-        //         width: 80%;
-        //     }
-
-        //     .logo {
-        //         width: 20%;
-        //         text-align: right;
-
-        //         img {
-        //             width: 200px;
-        //         }
-        //     }
-        // }
-
         .skills {
             display: flex;
             flex-wrap: wrap;
@@ -138,4 +118,11 @@
             }
         }
     }
+
 }
+
+@media (max-width: 1440px) {
+    #experience-dropdown {
+        margin: 0 ; /* Centre le conteneur horizontalement */
+    }
+  }

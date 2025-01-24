@@ -62,6 +62,12 @@
         }
     }
 
+    @media (max-width: 1440px) {
+        form {
+            margin: 0 0 150px 0;
+        }
+      }
+
 }
 .popup {
     position: fixed;

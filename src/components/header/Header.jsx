@@ -1,9 +1,11 @@
 import "./Header.scss";
 import { useEffect, useState } from "react";
+import burgerMenu from "../../assets/burgerMenu.png";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isScrollStarted, setIsScrollStarted] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // État du burger menu
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +21,10 @@ export default function Header() {
     window.location.href = "/";
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
   return (
     <div className="header-container">
       <div
@@ -27,11 +33,15 @@ export default function Header() {
           isScrollStarted ? "scroll-started" : ""
         }`}
       >
-        <div onClick={handleClick}>
+        <div onClick={handleClick} className="name">
           QueneaGislain<span className="point">.</span>
           <span className="underscore">_</span>
         </div>
-        <nav>
+        <nav
+          className={`nav-menu ${isMenuOpen ? "menu-open" : ""} ${
+            isScrolled ? "nav-scrolled" : ""
+          }`}
+        >
           <ul>
             <li>
               <a href="#header" onClick={handleClick}>
@@ -52,6 +62,14 @@ export default function Header() {
             </li>
           </ul>
         </nav>
+
+        {/* Bouton burger */}
+        <button
+          className={`burger-menu ${isMenuOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
+          <img src={burgerMenu} alt="Burger menu" />
+        </button>
       </div>
     </div>
   );
