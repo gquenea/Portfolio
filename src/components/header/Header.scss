@@ -9,9 +9,9 @@
   position: relative;
   top: 0;
   width: 100%;
-  z-index: 1000;
   transition: top 0.5s ease, background-color 0.5s ease;
   height: 100%;
+  z-index: 10;
 
   &.scroll-started {
     top: -140px;
@@ -32,6 +32,7 @@
       color: $light-blue-color;
       cursor: pointer;
       transition: filter 0.3s ease;
+      z-index: 10;
 
       .point {
         color: white;
@@ -81,6 +82,7 @@
       cursor: pointer;
       margin-right: 100px;
       display: none;
+      z-index: 10;
     }
   }
 
@@ -113,7 +115,7 @@
     }
 
     .nav-menu {
-      display: none;
+      display: flex;
       flex-direction: column;
       position: fixed;
       top: 140px;
@@ -122,6 +124,9 @@
       box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
       width: 100%;
       padding: 20px 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease, z-index 0.3s ease;
 
       ul {
         flex-direction: column;
@@ -130,8 +135,8 @@
     }
 
     .nav-menu.menu-open {
-      display: flex;
-
+      visibility: visible;
+      opacity: 1;
     }
   }
 }

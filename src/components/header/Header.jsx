@@ -11,11 +11,15 @@ export default function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 500);
       setIsScrollStarted(window.scrollY > 200 && window.scrollY < 500);
+
+      if (isMenuOpen) {
+        setIsMenuOpen(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isMenuOpen]);
 
   const handleClick = () => {
     window.location.href = "/";
