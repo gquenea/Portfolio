@@ -34,7 +34,7 @@
         font-size: 1.1em;
 
         .decoration{
-            color: gray;
+            color: #b3b3b3;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -42,7 +42,7 @@
             .vertical-line {
                 margin: 10px 0;
                 width: 1px;
-                background-color: gray;
+                background-color: #b3b3b3;
                 height: 85%;
             }
         }

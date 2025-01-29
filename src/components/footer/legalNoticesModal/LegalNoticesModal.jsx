@@ -1,7 +1,7 @@
 import React from "react";
 import Modal from "react-modal";
 import "./LegalNoticesModal.scss";
-import cross from "../../../assets/modalPictures/cross.png";
+import cross from "../../../assets/modalIcons/cross.png";
 
 export default function LegalNoticesModal({ isOpen, onClose }) {
   return (

@@ -129,26 +129,19 @@
   h3 {
     text-align: center;
     font-size: 40px;
-    width: 40%;
+    width: 45%;
   }
 
   .screen-container {
     display: flex;
     justify-content: center;
-    width: 60%;
-  }
+    width: 55%;
 
-  .base-screen {
-    width: 350px;
-    display: block;
-  }
-
-  .main-image {
-    position: absolute;
-    top: 20%; /* Ajustez pour aligner avec l'écran */
-    left: 25%; /* Ajustez pour centrer horizontalement */
-    width: 50%; /* Ajustez pour s'adapter à l'écran */
-    height: auto;
+    img {
+      width: 500px;
+      display: block;
+      z-index: -1;
+    }
   }
 }
 
@@ -174,4 +167,20 @@
 .modal-content::-webkit-scrollbar-track {
   background: $primary-color; /* Couleur de l'arrière-plan de la scrollbar */
   border-radius: 10px; /* Coins arrondis */
+}
+
+.gallery-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: stretch;
+  gap: 30px;
+  margin: 16px 0;
+
+  img {
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
 }

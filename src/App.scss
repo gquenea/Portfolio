@@ -40,3 +40,10 @@ body::-webkit-scrollbar-track {
   background: $primary-color;
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  .main-container {
+      padding: 0 50px;
+
+  }
+}

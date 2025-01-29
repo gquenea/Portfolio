@@ -16,3 +16,9 @@
           clear: both; /* Nettoie le flottement pour que le texte suivant ne soit pas affecté */
         }
 }
+
+@media (max-width: 768px) {
+    #presentation {
+     margin: 50px 0;
+    }
+}

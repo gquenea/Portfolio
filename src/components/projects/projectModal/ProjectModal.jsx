@@ -1,8 +1,7 @@
 import ReactModal from "react-modal";
 import "./ProjectModal.scss";
-import baseScreen from "../../../assets/modalPictures/baseScreen.png";
-import cross from "../../../assets/modalPictures/cross.png";
-import gitHubLogo from "../../../assets/modalPictures/gitHubLogo.png";
+import cross from "../../../assets/modalIcons/cross.png";
+import gitHubLogo from "../../../assets/modalIcons/gitHubLogo.png";
 import ModalDropdown from "../../dropdowns/modalDropdown/ModalDropdown";
 import { useState } from "react";
 
@@ -41,16 +40,12 @@ export default function ProjectModal({ project, isOpen, onClose }) {
       </div>
 
       <div className="modal-header">
+        <div className="screen-container">
+          <img src={project.mainImageInScreen} alt="Ecran d'ordinateur" />
+        </div>
         <h3>
           Projet <br /> <br /> {project.name}
         </h3>
-        <div className="screen-container">
-          <img
-            className="base-screen"
-            src={baseScreen}
-            alt="Ecran d'ordinateur"
-          />
-        </div>
       </div>
       <div className="modal-body">
         <ModalDropdown title="Description">
@@ -65,8 +60,8 @@ export default function ProjectModal({ project, isOpen, onClose }) {
           </ul>
         </ModalDropdown>
         <hr />
-        <ModalDropdown title="Gallerie d'image">
-          <div className="additional-images">
+        <ModalDropdown title="Galerie d'image">
+          <div className="gallery-image">
             {project.galleryImages.map((image, index) => (
               <img key={index} src={image} alt="Gallerie d'image" />
             ))}

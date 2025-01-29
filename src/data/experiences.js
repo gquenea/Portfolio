@@ -1,6 +1,6 @@
-import ocrLogo from "../assets/enterpriseLogo/ocrLogo.png";
-import lamsterLogo from "../assets/enterpriseLogo/lamsterLogo.png";
-import dtekLogo from "../assets/enterpriseLogo/dtekLogo.png";
+import ocrLogo from "../assets/enterpriseLogo/ocrLogo.webp";
+import lamsterLogo from "../assets/enterpriseLogo/lamsterLogo.webp";
+import dtekLogo from "../assets/enterpriseLogo/dtekLogo.webp";
 import hbLogo from "../assets/enterpriseLogo/hbLogo.webp";
 
 const experiences = [

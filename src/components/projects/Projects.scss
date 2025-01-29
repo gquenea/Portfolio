@@ -11,4 +11,11 @@
             margin: 0 auto;
         }
       }
+
+      @media (max-width: 768px) {
+        .cards-container {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
 }

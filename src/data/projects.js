@@ -1,15 +1,11 @@
-import bookiImg from "../assets/projectsPictures/booki.png";
-import ecoBlissBath from "../assets/projectsPictures/ecoBlissBath.png";
-import kasa from "../assets/projectsPictures/kasa.png";
-import sophieBluel from "../assets/projectsPictures/sophieBluel.png";
-import menuMaker from "../assets/projectsPictures/menuMaker.png";
-import theDojo from "../assets/projectsPictures/theDojo.png";
-import myMoney from "../assets/projectsPictures/myMoney.png";
-import magicMemory from "../assets/projectsPictures/magicMemory.png";
+import mainImages from "./imports/mainImages";
+import imagesInScreen from "./imports/imagesInScreen";
+import galleryImages from "./imports/galleryimages";
 
 const projects = [
   {
-    mainImage: bookiImg,
+    mainImage: mainImages.bookiMainImage,
+    mainImageInScreen: imagesInScreen.bookiImageInScreen,
     name: "Booki",
     description: "Projet de cours de création front HTML et CSS.",
     detailedDescription:
@@ -17,10 +13,11 @@ const projects = [
     skills: ["HTML", "CSS"],
     gitHubLink: "https://github.com/gquenea/Booki",
     type: "Développement",
-    galleryImages: [],
+    galleryImages: [galleryImages.bookiGallery1, galleryImages.bookiGallery2],
   },
   {
-    mainImage: ecoBlissBath,
+    mainImage: mainImages.ecoBlissBathMainImage,
+    mainImageInScreen: imagesInScreen.ecoBlissBathImageInScreen,
     name: "EcoBlissBath",
     description: "Projet de cours sur l'automatisation de test.",
     detailedDescription:
@@ -33,10 +30,17 @@ const projects = [
     ],
     gitHubLink: "https://github.com/gquenea/EcoBlissBath",
     type: "Test",
-    galleryImages: [],
+    galleryImages: [
+      galleryImages.ecoBlissBathGallery1,
+      galleryImages.ecoBlissBathGallery2,
+      galleryImages.ecoBlissBathGallery3,
+      galleryImages.ecoBlissBathGallery4,
+      galleryImages.ecoBlissBathGallery5,
+    ],
   },
   {
-    mainImage: kasa,
+    mainImage: mainImages.kasaMainImage,
+    mainImageInScreen: imagesInScreen.kasaImageInScreen,
     name: "Kasa",
     description: "Project de cours de creation d'application en React.",
     detailedDescription:
@@ -44,10 +48,15 @@ const projects = [
     skills: ["HTML", "CSS", "React", "Versionning"],
     gitHubLink: "https://github.com/gquenea/Kasa",
     type: "Développement",
-    galleryImages: [],
+    galleryImages: [
+      galleryImages.kasaGallery1,
+      galleryImages.kasaGallery2,
+      galleryImages.kasaGallery3,
+    ],
   },
   {
-    mainImage: sophieBluel,
+    mainImage: mainImages.sophieBluelMainImage,
+    mainImageInScreen: imagesInScreen.sophieBluelImageInScreen,
     name: "Sophie Bluel",
     description: "Project de cours de creation de site en JavaScript.",
     detailedDescription:
@@ -55,10 +64,16 @@ const projects = [
     skills: ["HTML", "CSS", "JavaScript", "API"],
     gitHubLink: "https://github.com/gquenea/Sophie-Bluel",
     type: "Développement",
-    galleryImages: [],
+    galleryImages: [
+      galleryImages.sophieBluelgallery1,
+      galleryImages.sophieBluelgallery2,
+      galleryImages.sophieBluelgallery3,
+      galleryImages.sophieBluelgallery4,
+    ],
   },
   {
-    mainImage: menuMaker,
+    mainImage: mainImages.menuMakerMainImage,
+    mainImageInScreen: imagesInScreen.menuMakerImageInScreen,
     name: "Menu Maker",
     description: "Projet de cours sur la planification de développement.",
     detailedDescription:
@@ -70,10 +85,16 @@ const projects = [
     ],
     gitHubLink: "https://github.com/gquenea/Menu-Maker",
     type: "Test",
-    galleryImages: [],
+    galleryImages: [
+      galleryImages.menuMakerGallery1,
+      galleryImages.menuMakerGallery2,
+      galleryImages.menuMakerGallery3,
+      galleryImages.menuMakerGallery4,
+    ],
   },
   {
-    mainImage: theDojo,
+    mainImage: mainImages.theDojoMainImage,
+    mainImageInScreen: imagesInScreen.theDojoImageInScreen,
     name: "The Dojo",
     description: "Projet exercice sur un site de management de projet.",
     detailedDescription:
@@ -81,10 +102,15 @@ const projects = [
     skills: ["HTML", "CSS", "React", "Firebase"],
     gitHubLink: "https://github.com/gquenea/the-dojo",
     type: "Développement",
-    galleryImages: [],
+    galleryImages: [
+      galleryImages.theDojoGallery1,
+      galleryImages.theDojoGallery2,
+      galleryImages.theDojoGallery3,
+    ],
   },
   {
-    mainImage: myMoney,
+    mainImage: mainImages.myMoneyMainImage,
+    mainImageInScreen: imagesInScreen.myMoneyImageInScreen,
     name: "My Money",
     description: "Projet exercice d'un site de gestion de budget.",
     detailedDescription:
@@ -92,10 +118,14 @@ const projects = [
     skills: ["HTML", "CSS", "React", "Firebase"],
     gitHubLink: "https://github.com/gquenea/my-money",
     type: "Développement",
-    galleryImages: [],
+    galleryImages: [
+      galleryImages.myMoneyGallery1,
+      galleryImages.myMoneyGallery2,
+    ],
   },
   {
-    mainImage: magicMemory,
+    mainImage: mainImages.magicMemoryMainImage,
+    mainImageInScreen: imagesInScreen.magicMemoryImageInScreen,
     name: "Magic Memory",
     description: "Projet exercice d'un petit jeu des paires en React.",
     detailedDescription:
@@ -103,7 +133,10 @@ const projects = [
     skills: ["HTML", "CSS", "React"],
     gitHubLink: "https://github.com/gquenea/magic-memory",
     type: "Développement",
-    galleryImages: [],
+    galleryImages: [
+      galleryImages.magicMemoryGallery1,
+      galleryImages.magicMemoryGallery2,
+    ],
   },
 ];
 
