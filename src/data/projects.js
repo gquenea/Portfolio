@@ -65,10 +65,10 @@ const projects = [
     gitHubLink: "https://github.com/gquenea/Sophie-Bluel",
     type: "Développement",
     galleryImages: [
-      galleryImages.sophieBluelgallery1,
-      galleryImages.sophieBluelgallery2,
-      galleryImages.sophieBluelgallery3,
-      galleryImages.sophieBluelgallery4,
+      galleryImages.sophieBluelGallery1,
+      galleryImages.sophieBluelGallery2,
+      galleryImages.sophieBluelGallery3,
+      galleryImages.sophieBluelGallery4,
     ],
   },
   {

@@ -4,7 +4,7 @@ export default function SkillCard({ skill, aos }) {
   return (
     <div id="skillCard" data-aos={aos}>
       <div className="card-header">
-        <img src={skill.icon} alt={skill.name} />
+        <img src={skill.icon} alt={`Icon ${skill.name}`} />
         <h3 style={{ "--bar-color": skill.underlineColor }}>{skill.name}</h3>
       </div>
       <div className="card-content">

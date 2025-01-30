@@ -19,10 +19,10 @@ export default function ProjectCard({
       data-aos={aos} // Animation de AOS
       data-aos-delay={aosDelay} // Décalage pour chaque carte
     >
-      <img src={project.mainImage} alt={project.name} />
+      <img src={project.mainImage} alt={`Apperçu du site ${project.name}`} />
       <div className="title-and-description">
         <div className="title-and-type">
-          <h4>{project.name}</h4>
+          <h3>{project.name}</h3>
           <p>{project.type}</p>
         </div>
         <p>{project.description}</p>

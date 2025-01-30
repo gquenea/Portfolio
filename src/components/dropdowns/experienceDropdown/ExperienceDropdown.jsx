@@ -21,7 +21,7 @@ export default function ExperienceDropdown({
     <div id="experience-dropdown">
       <div className="dropdown-title-box" onClick={toggleDropdown}>
         <div>
-          <h4>{title}</h4>
+          <h3>{title}</h3>
         </div>
         <div className="date-and-arrow">
           <p className="date">{date}</p>
