@@ -49,11 +49,11 @@ export default function ContactForm() {
   return (
     <div id="contactForm">
       <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
+        <label className="visually-hidden">Name</label>
         <input type="text" name="user_name" placeholder="Nom" required />
-        <label>Email</label>
+        <label className="visually-hidden">Email</label>
         <input type="email" name="user_email" placeholder="Email" required />
-        <label>Message</label>
+        <label className="visually-hidden">Message</label>
         <textarea name="message" placeholder="Message" required />
         <input className="submit" type="submit" value="Envoyer" />
       </form>

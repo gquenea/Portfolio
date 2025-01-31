@@ -140,3 +140,21 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  #header {
+
+    .burger-menu {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #header {
+
+    .name {
+      display: none;
+    }
+  }
+}

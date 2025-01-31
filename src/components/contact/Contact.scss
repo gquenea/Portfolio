@@ -22,3 +22,18 @@
     }
 }
 
+@media (max-width: 500px) {
+    #contact {
+        .contact-content {
+           display: flex;
+           flex-wrap: wrap;
+
+        }
+        a {
+            flex: 1 1 45%; // Les éléments prennent 45% de la largeur, permettant le wrap
+            max-width: 45%; // Empêche les éléments d'être trop larges
+            text-align: center; 
+        }
+    }
+  }
+

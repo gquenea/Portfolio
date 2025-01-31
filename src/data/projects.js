@@ -26,7 +26,6 @@ const projects = [
       "Cypress",
       "Analyse de besoin du projet",
       "Rédaction de rapport de résultat",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus nisl interdum, consectetur leo ac, interdum eros. Donec magna neque, viverra ut mollis vel, vestibulum at tellus. Cras dignissim nunc vitae leo commodo, at placerat orci elementum. Donec eu aliquam leo, quis aliquet urna. Ut a tor",
     ],
     gitHubLink: "https://github.com/gquenea/EcoBlissBath",
     type: "Test",

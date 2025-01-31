@@ -48,3 +48,26 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    #skillCard {
+        .card-header {
+            img {
+                width: 50px;
+                margin-right: 15px;
+            }
+        }
+        .card-content {
+            .decoration {
+                display: none;
+            }
+        }
+        padding: 20px;
+        .card-header {
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+  }
+}
+

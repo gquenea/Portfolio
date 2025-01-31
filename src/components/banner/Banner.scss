@@ -40,13 +40,31 @@
 
   }
 
-  @media (max-width: 768px) {
-    #banner {
-      .name-and-job {
-        h1 {
-          font-size: 0.4em;
+    @media (max-width: 768px) {
+      #banner {
+        .name-and-job {
+          h1 {
+            font-size: 0.5em;
+          }
         }
       }
     }
-  }
+  
+    @media (max-width: 500px) {
+      #banner {
+        .name-and-job {
+          text-align: center;
+  
+          .first-name {
+            margin-left: 0;
+          }
+  
+          .last-name {
+            margin-bottom: 100px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
 

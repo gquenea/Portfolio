@@ -6,7 +6,7 @@
   padding: 40px 40px 40px 50px;
   border-radius: 10px;
   width: 700px;
-  height: 900px;
+  height: 850px;
   outline: none;
   overflow-y: auto;
   scrollbar-gutter: stable;
@@ -32,7 +32,7 @@
   height: 100%;
   opacity: 0;
   animation: fadeInOverlay 0.4s forwards;
-  margin-top: 50px;
+  margin-top: 65px;
 }
 
 .modal-overlay.closing {
@@ -207,8 +207,9 @@
 
     .image-modal-header {
       position: absolute;
-      top: -50px;
-      right: -50px;
+      right: -30px;
+      top: -30px;
+
       
       .close-button {
         background-color: #030203;
@@ -225,22 +226,59 @@
 
     .image-modal-body {
       img {
-        max-width: 100%;
+        max-width: 80vw;
         max-height: 80vh;
         object-fit: contain;
         border-radius: 10px;
 
       }
-      &:focus-visible {
-        outline: none;
-        border-color: #030203;
-    }
     }
   }
 }
+:focus {
+  outline: none;
+}
 
+@media (max-width: 768px) {
+  .modal-content {
+      width: 80vw;
+      .modal-header {
+        .screen-container {
+          img {
+            width: 300px;
+          }
+        }
+        h3 {
+          font-size: 30px;
+        }
+      }
+      .modal-body {
+        h4 {
+          font-size: 20px;
+        }
+      }
+      
+      .gallery-image {
+        gap: 20px;
+        img {
+          height: 100%;
+        }
+      }
+  }
+}
 
-
-
-
-
+@media (max-width: 500px) {
+  .modal-content {
+    padding: 20px 20px 20px 30px;
+  }
+  .modal-header {
+      flex-direction: column-reverse;
+      h3 {
+        width: 100%;
+        margin: 0;
+        br:first-of-type {
+          display: none;
+        }
+      }
+  }
+}

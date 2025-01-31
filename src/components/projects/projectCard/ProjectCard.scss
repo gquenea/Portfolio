@@ -44,7 +44,13 @@
       margin: 0;
       color: #b3b3b3;
     }
+  }
 
-
+  @media (max-width: 400px) {
+    .projectCard {
+        .title-and-description {
+          height: 100px;
+        }
+    }
   }
   
