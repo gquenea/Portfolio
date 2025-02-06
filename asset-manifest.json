@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "//gquenea.github.io/portfolio/static/css/main.c3fc585a.css",
-    "main.js": "//gquenea.github.io/portfolio/static/js/main.d578048a.js",
+    "main.css": "//gquenea.github.io/portfolio/static/css/main.b550d493.css",
+    "main.js": "//gquenea.github.io/portfolio/static/js/main.ecaf02c0.js",
     "static/media/gallery2.webp": "//gquenea.github.io/portfolio/static/media/gallery2.9540f00b0b35a39a1daf.webp",
     "static/media/gallery1.webp": "//gquenea.github.io/portfolio/static/media/gallery1.6552d592bb6218a33cba.webp",
     "static/media/gallery5.webp": "//gquenea.github.io/portfolio/static/media/gallery5.2ce7ad5711e2e97c45cc.webp",
@@ -15,11 +15,11 @@
     "static/media/dtekLogo.webp": "//gquenea.github.io/portfolio/static/media/dtekLogo.485e1907dae88ff8999d.webp",
     "static/media/lamsterLogo.webp": "//gquenea.github.io/portfolio/static/media/lamsterLogo.98d93ea7e4f3de8ee4eb.webp",
     "index.html": "//gquenea.github.io/portfolio/index.html",
-    "main.c3fc585a.css.map": "//gquenea.github.io/portfolio/static/css/main.c3fc585a.css.map",
-    "main.d578048a.js.map": "//gquenea.github.io/portfolio/static/js/main.d578048a.js.map"
+    "main.b550d493.css.map": "//gquenea.github.io/portfolio/static/css/main.b550d493.css.map",
+    "main.ecaf02c0.js.map": "//gquenea.github.io/portfolio/static/js/main.ecaf02c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3fc585a.css",
-    "static/js/main.d578048a.js"
+    "static/css/main.b550d493.css",
+    "static/js/main.ecaf02c0.js"
   ]
 }
