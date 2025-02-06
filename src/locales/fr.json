@@ -1,0 +1,162 @@
+{
+  "header.nav.welcome": "// Accueil",
+  "header.nav.skills": "// Compétences",
+  "header.nav.projects": "// Projets",
+  "header.nav.experiences": "// Expériences",
+  "header.nav.contact": "// Contact",
+  "header.banner.job": "Testeur Logiciel",
+
+  "presentation": "Depuis quelques années, je me suis reconverti dans un domaine qui reflète ma passion pour la technologie : l’IT. J’ai suivi une formation d’un an en développement web full stack, puis j’ai travaillé pendant un an dans une entreprise développant des solutions logicielles. Là-bas, j’ai côtoyé l’équipe de testeurs, et ce métier a immédiatement éveillé ma curiosité. J’ai donc décidé d'entamer un parcours en tant que testeur logiciel. Aujourd’hui, j’ai hâte d’intégrer une équipe de test et de perfectionner mes connaissances afin, à terme, de devenir Lead Test.",
+
+  "skills.title": "Compétences",
+  "skills": {
+    "testCard": {
+      "name": "Test logiciel",
+      "description": "Rédaction de cahiers de recettes, de bilans de campagne et de revues d'exigences. Connaissance des tests exploratoires, des tests de non-régression, des tests d'intégration, des tests système et des tests automatisés avec Cypress."
+    },
+    "devCard": {
+      "name": "Développement",
+      "description": "Connaissance des langages HTML, CSS, JavaScript, TypeScript, React, SQL et de la gestion de bases de données. Notions en Angular, PHP, Symfony et Docker. Utilisation de GitHub."
+    },
+    "organisationCard": {
+      "name": "Organisation",
+      "description": "Connaissance du fonctionnement Agile/SCRUM et des outils de gestion tels que Jira, Trello et Azure DevOps. Notions en Excel et dans la suite Office. Bonne rédaction."
+    }
+  },
+
+  "projects.title": "Projets",
+  "projects": {
+    "booki": {
+      "name": "Booki",
+      "description": "Projet de cours de création front-end en HTML et CSS.",
+      "detailedDescription": "Booki est un projet de cours ayant pour but de créer une page d'accueil d'un site d'agence de voyage en HTML et CSS, en se basant sur des standards d'entreprise. L'objectif premier est d'être fidèle à la maquette qui a été donnée. La page est conçue en desktop first, mais elle est également responsive pour mobile et tablette.",
+      "type": "Développement"
+    },
+    "ecoBlissBath": {
+      "name": "EcoBlissBath",
+      "description": "Projet de cours sur l'automatisation de tests.",
+      "detailedDescription": "EcoBlissBath est un projet de cours basé sur l'automatisation des tests fonctionnels. La première tâche était d'analyser les résultats d'une campagne de tests manuels précédemment réalisée et d'identifier les zones où l'automatisation pouvait améliorer l’efficacité du processus de qualité. Pour finir, il fallait rédiger un rapport détaillé sur les résultats des tests automatisés.",
+      "type": "Test"
+    },
+    "kasa": {
+      "name": "Kasa",
+      "description": "Projet de cours de création d'application en React.",
+      "detailedDescription": "Kasa est un projet de cours visant à implémenter le front-end d'une application de location. Il s'agissait de développer la logique de présentation des données en utilisant React, en se basant sur les maquettes des différentes pages du site.",
+      "type": "Développement"
+    },
+    "sophieBluel": {
+      "name": "Sophie Bluel",
+      "description": "Projet de cours de création de site en JavaScript.",
+      "detailedDescription": "Sophie Bluel est un projet de cours visant à développer la page de présentation des travaux d'une architecte. À partir d'un HTML fourni, le but était d'implémenter toutes les fonctionnalités restantes (création d'une modale, création d'une page de connexion, etc.) et d'effectuer des manipulations du DOM avec JavaScript.",
+      "type": "Développement"
+    },
+    "menuMaker": {
+      "name": "Menu Maker",
+      "description": "Projet de cours sur la planification du développement.",
+      "detailedDescription": "Menu Maker est un projet de cours sur la planification du développement d'un site. Le rôle consistait à rédiger les spécifications techniques du projet (besoins fonctionnels et décomposition des fonctionnalités). Une veille technologique devait être mise en place, ainsi que la présentation de la solution technique.",
+      "type": "Test"
+    },
+    "theDojo": {
+      "name": "The Dojo",
+      "description": "Exercice sur un site de management de projet.",
+      "detailedDescription": "The Dojo est un exercice qui consiste à créer un site de management pour le développement d'applications, avec la possibilité de créer des tickets et de les assigner à différents utilisateurs. Le tout en React, avec un système de login/logout et la possibilité de voir les utilisateurs actuellement connectés.",
+      "type": "Développement"
+    },
+    "myMoney": {
+      "name": "My Money",
+      "description": "Exercice d'un site de gestion de budget.",
+      "detailedDescription": "My Money est un exercice de développement d'une application simple de gestion de finances. Elle permet d'ajouter des transactions avec un prix et un nom, et de consulter ces transactions. Cette application, réalisée avec React, contient un système de login/logout.",
+      "type": "Développement"
+    },
+    "magicMemory": {
+      "name": "Magic Memory",
+      "description": "Exercice d'un petit jeu de mémoire en React.",
+      "detailedDescription": "Magic Memory est un jeu de paires sur navigateur réalisé avec React. Douze cartes retournées s'affichent à l'écran, et on ne peut en retourner que deux à la fois. L'objectif est de trouver toutes les paires en un minimum de tours.",
+      "type": "Développement"
+    }
+  },
+
+  "projectSkills": {
+    "HTML": "HTML",
+    "CSS": "CSS",
+    "React": "React",
+    "JavaScript": "JavaScript",
+    "API": "API",
+    "Firebase": "Firebase",
+    "Cypress": "Cypress",
+    "Analyse des besoins du projet": "Analyse des besoins du projet",
+    "Rédaction de rapports de résultats": "Rédaction de rapports de résultat",
+    "Versionning": "Versionning",
+    "Veille technologique": "Veille technologique",
+    "Spécifications techniques": "Spécifications techniques",
+    "Outils de gestion de développement (Trello)": "Outils de gestion de développement (Trello)"
+  },
+
+  "experience.title": "Expériences",
+  "experiences": {
+    "openClassRooms": {
+      "title": "Formation testeur logiciel",
+      "date": "Juillet 2024 - Février 2025",
+      "description": "Formation en ligne avec suivi personnalisé sur les tenants et aboutissants du métier de testeur de logiciels. Apprentissage de la garantie qualité des applications, de la détection des anomalies et de l'assurance du bon fonctionnement des logiciels. Utilisation des outils de test comme Jira ou Cypress et initiation aux différents types de tests."
+    },
+    "lamster": {
+      "title": "Développeur Full Stack",
+      "date": "Novembre 2023 - Février 2024",
+      "description": "Développeur full stack au sein d'une startup de création de solution logiciel pour des entreprise de la restauration et de l'hôtelerie. L'application sur laquelle j'intervenais consistait à informatiser et à facilité la maintenance des établissements, que ce soir pour le suivi des équipements, la gestion des intervention ou la supervision des contrats."
+    },
+    "dtek": {
+      "title": "Développeur Full Stack",
+      "date": "Octobre 2022 - Octobre 2023",
+      "description": "Développeur full stack dans une entreprise de création de solutions logicielles pour une entreprise de transport. J'intervenais sur un groupe d'applications qui avait pour but de subvenir à l'intégralité des besoins du client. Création de fonctionnalités et correction de divers bugs."
+    },
+    "humanBooster": {
+      "title": "Formation développeur Full Stack",
+      "date": "Juin 2021 - Juin 2022",
+      "description": "Formation d'un an sur les bases du métier de développeur full stack. Différents aspects et technologies ont été abordés, de la création de maquettes à la mise en ligne d'un site. Dans les deux derniers mois de la formation, j'ai pu effectuer un stage dans l'entreprise Barzool."
+    }
+  },
+  "experienceSkills": {
+    "Plans de test": "Plans de test",
+    "Scénarios de tests": "Scénarios de tests",
+    "Analyse des résultats de tests": "Analyse des résultats de tests",
+    "Gestion de projet": "Gestion de projet",
+    "Automatisation de test (Cypress)": "Automatisation de test (Cypress)",
+    "React": "React",
+    "NodeJs": "NodeJs",
+    "Base de données": "Base de données",
+    "Agile": "Agile",
+    "Infrastructure": "Infrastructure",
+    "Angular": "Angular",
+    "Azur devops": "Azur devops",
+    "Algorithme": "Algorithme",
+    "Versionning": "Versionning",
+    "HTML": "HTML",
+    "CSS": "CSS",
+    "JavaScript": "JavaScript",
+    "PHP": "PHP",
+    "Symfony": "Symfony"
+  },
+
+  "contact.download": "Télécharger",
+  "contact.cv": "mon CV",
+  "contact.form.name": "Nom",
+  "contact.form.send": "Envoyer",
+  "contact.form.successMessage": "Votre message a été envoyé avec succès !",
+  "contact.form.errorMessage": "Une erreur est survenue. Veuillez réessayer plus tard.",
+
+  "footer": "© 2024 Quenea Gislain. Tous droits réservés. Mentions légales.",
+  "footer.legalNotices.title": "Mentions légales",
+  "footer.legalNotices.websiteEditor.title": "1. Éditeur du site",
+  "footer.legalNotices.websiteEditor.textLine1": "Le site Quenea Gislain est édité par Quenea Gislain:",
+  "footer.legalNotices.websiteEditor.textLine2": "Nom : Quenea Gislain",
+  "footer.legalNotices.websiteHosting.title": "2. Hébergement du site",
+  "footer.legalNotices.websiteHosting.text": "Le site est hébergé par GitHub Pages",
+  "footer.legalNotices.intellectualProperty.title": "3. Propriété intellectuelle",
+  "footer.legalNotices.intellectualProperty.text": "Tous les contenus présents sur ce site (textes, images, logos, etc.) sont la propriété exclusive de Quenea Gislain. Toute reproduction, même partielle, est interdite sans l'accord préalable de l'éditeur.",
+  "footer.legalNotices.responsibility.title": "4. Responsabilité",
+  "footer.legalNotices.responsibility.text": "L'éditeur du site ne pourra être tenu responsable des erreurs, omissions ou conséquences liées à l'utilisation des informations présentes sur ce site.",
+  "footer.legalNotices.personalData.title": "5. Données personnelles",
+  "footer.legalNotices.personalData.text": "Ce site ne collecte aucune donnée personnelle. Les informations recueillies sont destinées uniquement à la gestion de vos demandes et ne seront pas utilisées à des fins commerciales.",
+  "footer.legalNotices.cookies.title": "6. Cookies",
+  "footer.legalNotices.cookies.text": "Ce site peut n'utilise pas de Cookies."
+}

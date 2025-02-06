@@ -3,16 +3,10 @@ import "./ExperienceDropdown.scss";
 import dropdownArrow from "../../../assets/dropdownIcons/dropdownArrow.png";
 import buildingIcon from "../../../assets/dropdownIcons/buildingIcon.png";
 import pinIcon from "../../../assets/dropdownIcons/pinIcon.png";
+import { useTranslation } from "react-i18next";
 
-export default function ExperienceDropdown({
-  title,
-  date,
-  localisation,
-  enterpriseName,
-  description,
-  enterpriseLogo,
-  skills,
-}) {
+export default function ExperienceDropdown({ experience }) {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
@@ -21,10 +15,10 @@ export default function ExperienceDropdown({
     <div id="experience-dropdown">
       <div className="dropdown-title-box" onClick={toggleDropdown}>
         <div>
-          <h3>{title}</h3>
+          <h3>{t(`experiences.${experience.key}.title`)}</h3>
         </div>
         <div className="date-and-arrow">
-          <p className="date">{date}</p>
+          <p className="date">{t(`experiences.${experience.key}.date`)}</p>
           <img
             src={dropdownArrow}
             alt="dropdown icon"
@@ -37,20 +31,24 @@ export default function ExperienceDropdown({
           <div className="content-header">
             <div className="enterprise-name">
               <img src={buildingIcon} alt="Icon d'entreprise'" />
-              <p>{enterpriseName}</p>
+              <p>{experience.enterpriseName}</p>
             </div>
             <div className="localisation">
               <img src={pinIcon} alt="Icon de localisation" />
-              <p>{localisation}</p>
+              <p>{experience.localisation}</p>
             </div>
           </div>
-          <p className="description">{description}</p>
-          <ul className="skills">{skills}</ul>
+          <p className="description">{t(`experiences.${experience.key}.description`)}</p>
+          <ul className="skills">
+              {experience.skills.map((skill, index) => (
+                <li key={index}>{t(`experienceSkills.${skill}`)}</li>
+              ))}
+            </ul>
         </div>
         <div className="logo">
           <img
-            src={enterpriseLogo}
-            alt={`Logo de l'entreprise ${enterpriseName}`}
+            src={experience.enterpriseLogo}
+            alt={`Logo de l'entreprise ${experience.enterpriseName}`}
           />
         </div>
       </div>

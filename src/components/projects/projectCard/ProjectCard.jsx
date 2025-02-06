@@ -1,5 +1,7 @@
 import React from "react";
 import "./ProjectCard.scss";
+import { useTranslation } from "react-i18next";
+
 
 export default function ProjectCard({
   project,
@@ -10,6 +12,8 @@ export default function ProjectCard({
   aos,
   aosDelay,
 }) {
+    const { t } = useTranslation();
+  
   return (
     <div
       className={`projectCard ${isFaded ? "faded" : ""}`}
@@ -22,10 +26,10 @@ export default function ProjectCard({
       <img src={project.mainImage} alt={`Apperçu du site ${project.name}`} />
       <div className="title-and-description">
         <div className="title-and-type">
-          <h3>{project.name}</h3>
-          <p>{project.type}</p>
+          <h3>{t(`projects.${project.key}.name`)}</h3>
+          <p>{t(`projects.${project.key}.type`)}</p>
         </div>
-        <p>{project.description}</p>
+        <p>{t(`projects.${project.key}.description`)}</p>
       </div>
     </div>
   );

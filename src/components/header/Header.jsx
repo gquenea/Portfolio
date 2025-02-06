@@ -1,11 +1,17 @@
 import "./Header.scss";
 import { useEffect, useState } from "react";
 import burgerMenu from "../../assets/burgerMenu.png";
+import { useTranslation } from "react-i18next";
+import engFlag from "../../assets/engFlag.png";
+import frFlag from "../../assets/frFlag.png";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isScrollStarted, setIsScrollStarted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // État du burger menu
+  const [isEnglish, setIsEnglish] = useState(false);
+
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,12 +27,24 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isMenuOpen]);
 
+  useEffect(() => {
+    i18n.changeLanguage(localStorage.getItem("language") || "fr");
+    setIsEnglish(i18n.language === "en");
+  }, [i18n]);
+
   const handleClick = () => {
     window.location.href = "/";
   };
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
+  };
+
+  const toggleLanguage = () => {
+    const newLanguage = isEnglish ? "fr" : "en";
+    i18n.changeLanguage(newLanguage);
+    localStorage.setItem("language", newLanguage);
+    setIsEnglish(newLanguage === "en");
   };
 
   return (
@@ -49,22 +67,28 @@ export default function Header() {
           <ul>
             <li>
               <a href="#header" onClick={handleClick}>
-                {"// Accueil"}
+                {t("header.nav.welcome")}
               </a>
             </li>
             <li>
-              <a href="#skills">{"// Compétences"}</a>
+              <a href="#skills">{t("header.nav.skills")}</a>
             </li>
             <li>
-              <a href="#projects">{"// Projets"}</a>
+              <a href="#projects">{t("header.nav.projects")}</a>
             </li>
             <li>
-              <a href="#experiences">{"// Expériences"}</a>
+              <a href="#experiences">{t("header.nav.experiences")}</a>
             </li>
             <li>
-              <a href="#contact">{"// Contact"}</a>
+              <a href="#contact">{t("header.nav.contact")}</a>
             </li>
           </ul>
+          <img
+            onClick={toggleLanguage}
+            className="toggle-language"
+            src={isEnglish ? frFlag : engFlag}
+            alt="Drapeau de langue"
+          />
         </nav>
 
         {/* Bouton burger */}

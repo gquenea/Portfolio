@@ -2,8 +2,11 @@ import React from "react";
 import Modal from "react-modal";
 import "./LegalNoticesModal.scss";
 import cross from "../../../assets/modalIcons/cross.png";
+import { useTranslation } from "react-i18next";
 
 export default function LegalNoticesModal({ isOpen, onClose }) {
+  const { t } = useTranslation();
+
   return (
     <Modal
       isOpen={isOpen}
@@ -17,48 +20,34 @@ export default function LegalNoticesModal({ isOpen, onClose }) {
             <img src={cross} alt="Croix de fermeture de modal" />
           </button>
         </div>
-        <h2>Mentions légales</h2>
+        <h2>{t("footer.legalNotices.title")}</h2>
 
-        <h3>1. Éditeur du site</h3>
+        <h3>{t("footer.legalNotices.websiteEditor.title")}</h3>
         <p>
-          Le site Quenea Gislain est édité par Quenea Gislain: <br />
-          Nom : Quenea Gislain <br />
+          {t("footer.legalNotices.websiteEditor.textLine1")} <br />
+          {t("footer.legalNotices.websiteEditor.textLine2")} <br />
           Email : quenea.gislain@gmail.com
         </p>
         <hr />
 
-        <h3>2. Hébergement du site</h3>
-        <p>Le site est hébergé par GitHub Pages</p>
+        <h3>{t("footer.legalNotices.websiteHosting.title")}</h3>
+        <p>{t("footer.legalNotices.websiteHosting.text")}</p>
         <hr />
 
-        <h3>3. Propriété intellectuelle</h3>
-        <p>
-          Tous les contenus présents sur ce site (textes, images, logos, etc.)
-          sont la propriété exclusive de Quenea Gislain. Toute reproduction,
-          même partielle, est interdite sans l'accord préalable de l'éditeur.
-        </p>
+        <h3>{t("footer.legalNotices.intellectualProperty.title")}</h3>
+        <p>{t("footer.legalNotices.intellectualProperty.text")}</p>
         <hr />
 
-        <h3>4. Responsabilité</h3>
-        <p>
-          L'éditeur du site ne pourra être tenu responsable des erreurs,
-          omissions ou conséquences liées à l'utilisation des informations
-          présentes sur ce site.
-        </p>
+        <h3>{t("footer.legalNotices.responsibility.title")}</h3>
+        <p>{t("footer.legalNotices.responsibility.text")}</p>
         <hr />
 
-        <h3>5. Données personnelles</h3>
-        <p>
-          Ce site ne collecte aucune donnée personnelle. Les informations
-          recueillies sont destinées uniquement à la gestion de vos demandes et
-          ne seront pas utilisées à des fins commerciales.
-        </p>
+        <h3>{t("footer.legalNotices.personalData.title")}</h3>
+        <p>{t("footer.legalNotices.personalData.text")}</p>
         <hr />
 
-        <h3>6. Cookies</h3>
-        <p>
-          Ce site peut n'utilise pas de Cookies.
-        </p>
+        <h3>{t("footer.legalNotices.cookies.title")}</h3>
+        <p>{t("footer.legalNotices.cookies.text")}</p>
       </div>
     </Modal>
   );

@@ -1,0 +1,162 @@
+{
+  "header.nav.welcome": "// Welcome",
+  "header.nav.skills": "// Skills",
+  "header.nav.projects": "// Projects",
+  "header.nav.experiences": "// Experiences",
+  "header.nav.contact": "// Contact",
+  "header.banner.job": "Software Tester",
+
+  "presentation": "For the past few years, I have transitioned into a field that reflects my passion for technology: IT. I completed a one-year full-stack web development training program, then worked for a year in a company developing software solutions. There, I had the opportunity to work alongside the testing team, and their role immediately caught my interest. I then decided to pursue a career as a software tester. Today, I am eager to join a testing team and further develop my skills with the goal of eventually becoming a Lead Tester.",
+
+  "skills.title": "Skills",
+  "skills": {
+    "testCard": {
+      "name": "Software Testing",
+      "description": "Writing test plans, campaign reports, and requirements reviews. Knowledge of exploratory testing, regression testing, integration testing, system testing, and automated tests with Cypress."
+    },
+    "devCard": {
+      "name": "Development",
+      "description": "Knowledge of HTML, CSS, JavaScript, TypeScript, React, SQL, and database management. Basic knowledge of Angular, PHP, Symfony, and Docker. Use of GitHub."
+    },
+    "organisationCard": {
+      "name": "Organization",
+      "description": "Knowledge of Agile/SCRUM methodology and management tools such as Jira, Trello, and Azure DevOps. Basic knowledge of Excel and the Office Suite. Strong writing skills."
+    }
+  },
+
+  "projects.title": "Projects",
+  "projects": {
+    "booki": {
+      "name": "Booki",
+      "description": "Course project for front-end creation with HTML and CSS.",
+      "detailedDescription": "Booki is a course project aimed at creating a homepage for a travel agency website using HTML and CSS, based on company standards. The main objective was to stay true to the provided mockup. The page follows a desktop-first approach but is also responsive and adapted for mobile and tablet.",
+      "type": "Development"
+    },
+    "ecoBlissBath": {
+      "name": "EcoBlissBath",
+      "description": "Course project on test automation.",
+      "detailedDescription": "EcoBlissBath is a course project focused on automating functional tests. The first task was to analyze the results of a previously conducted manual testing campaign and identify areas where automation could improve the efficiency of the quality process. Finally, a detailed report had to be written on the results of the automated tests.",
+      "type": "Test"
+    },
+    "kasa": {
+      "name": "Kasa",
+      "description": "Course project to create a React application.",
+      "detailedDescription": "Kasa is a course project aimed at implementing the front-end of a housing application. The goal was to develop the data presentation logic using React, based on mockups of the site's different pages.",
+      "type": "Development"
+    },
+    "sophieBluel": {
+      "name": "Sophie Bluel",
+      "description": "Course project to create a website using JavaScript.",
+      "detailedDescription": "Sophie Bluel is a course project aimed at developing the presentation page for an architect's portfolio. Based on a provided HTML file, the task was to implement all the remaining features (modal creation, login page creation, etc.) and manipulate the DOM using JavaScript.",
+      "type": "Development"
+    },
+    "menuMaker": {
+      "name": "Menu Maker",
+      "description": "Course project on development planning.",
+      "detailedDescription": "Menu Maker is a course project focused on planning the development of a website. The role was to write the technical specifications for the project (functional requirements and feature breakdown). A technological watch had to be set up, along with the presentation of the technical solution.",
+      "type": "Test"
+    },
+    "theDojo": {
+      "name": "The Dojo",
+      "description": "Project exercise on a project management site.",
+      "detailedDescription": "The Dojo is an exercise where you create a site for application development management, with the ability to create tickets and assign them to different users. The project was developed in React with a login/logout system and the ability to see users currently logged in.",
+      "type": "Development"
+    },
+    "myMoney": {
+      "name": "My Money",
+      "description": "Project exercise for a budget management website.",
+      "detailedDescription": "My Money is an exercise for developing a simple finance management application. It allows adding transactions with a price and a name. These transactions can be viewed. This application, built with React, contains a login/logout system.",
+      "type": "Development"
+    },
+    "magicMemory": {
+      "name": "Magic Memory",
+      "description": "Project exercise for a memory card game in React.",
+      "detailedDescription": "Magic Memory is a browser-based memory card game built with React. Twelve face-down cards are displayed on the screen, and only two can be turned over at a time. The goal is to find all the pairs in the fewest possible moves.",
+      "type": "Development"
+    }
+  },
+
+  "projectSkills": {
+    "HTML": "HTML",
+    "CSS": "CSS",
+    "React": "React",
+    "JavaScript": "JavaScript",
+    "API": "API",
+    "Firebase": "Firebase",
+    "Cypress": "Cypress",
+    "Analyse des besoins du projet": "Project Requirements Analysis",
+    "Rédaction de rapports de résultats": "Writing Result Reports",
+    "Versionning": "Versionning",
+    "Veille technologique": "Technology Watch",
+    "Spécifications techniques": "Technical Specifications",
+    "Outils de gestion de développement (Trello)": "Development Management Tools (Trello)"
+  },
+
+  "experience.title": "Experiences",
+  "experiences": {
+    "openClassRooms": {
+      "title": "Formation testeur logiciel",
+      "date": "Juillet 2024 - Février 2025",
+      "description": "Online training with personalized follow-up on the ins and outs of the software testing profession. Learning application quality assurance, anomaly detection, and ensuring the proper functioning of software. Use of testing tools like Jira or Cypress and an introduction to different types of tests."
+    },
+    "lamster": {
+      "title": "Full Stack Developer",
+      "date": "November 2023 - February 2024",
+      "description": "Full-stack developer in a startup that creates software solutions for companies in the hospitality and restaurant industry. The application I worked on aimed to digitize and simplify the maintenance of establishments, whether for equipment tracking, managing interventions, or overseeing contracts."
+    },
+    "dtek": {
+      "title": "Full Stack Developer",
+      "date": "October 2022 - October 2023",
+      "description": "Full-stack developer in a company that creates software solutions for a transportation company. I worked on a set of applications designed to meet the client's full range of needs. Creation of features and various bug fixes."
+    },
+    "humanBooster": {
+      "title": "Full Stack Developer Training",
+      "date": "June 2021 - June 2022",
+      "description": "One-year training on the fundamentals of the full-stack developer profession. Various aspects and technologies were covered, from creating mockups to deploying a website. During the last two months of the training, I was able to complete an internship at Barzool company."
+    }
+  },
+  "experienceSkills": {
+    "Plans de test": "Test plans",
+    "Scénarios de tests": "Test scenarios",
+    "Analyse des résultats de tests": "Test result analysis",
+    "Gestion de projet": "Project management",
+    "Automatisation de test (Cypress)": "Test automation (Cypress)",
+    "React": "React",
+    "NodeJs": "NodeJs",
+    "Base de données": "Database",
+    "Agile": "Agile",
+    "Infrastructure": "Infrastructure",
+    "Angular": "Angular",
+    "Azur devops": "Azure DevOps",
+    "Algorithme": "Algorithm",
+    "Versionning": "Versioning",
+    "HTML": "HTML",
+    "CSS": "CSS",
+    "JavaScript": "JavaScript",
+    "PHP": "PHP",
+    "Symfony": "Symfony"
+  },
+
+  "contact.download": "Download",
+  "contact.cv": "my CV",
+  "contact.form.name": "Name",
+  "contact.form.send": "Send",
+  "contact.form.successMessage": "Your message has been successfully sent !",
+  "contact.form.errorMessage": "An error occurred. Please try again later.",
+
+  "footer": "© 2024 Quenea Gislain. All rights reserved. Legal notices.",
+  "footer.legalNotices.title": "Legal notices",
+  "footer.legalNotices.websiteEditor.title": "1. Website editor",
+  "footer.legalNotices.websiteEditor.textLine1": "The Quenea Gislain website is published by Quenea Gislain.",
+  "footer.legalNotices.websiteEditor.textLine2": "Name : Quenea Gislain",
+  "footer.legalNotices.websiteHosting.title": "2. Website hosting",
+  "footer.legalNotices.websiteHosting.text": "The site is hosted by GitHub Pages.",
+  "footer.legalNotices.intellectualProperty.title": "3. Intellectual property",
+  "footer.legalNotices.intellectualProperty.text": "All content on this site (texts, images, logos, etc.) is the exclusive property of Quenea Gislain. Any reproduction, even partial, is prohibited without the prior consent of the publisher.",
+  "footer.legalNotices.responsibility.title": "4. Responsibility",
+  "footer.legalNotices.responsibility.text": "The site editor cannot be held responsible for errors, omissions, or consequences related to the use of the information on this site.",
+  "footer.legalNotices.personalData.title": "5. Personal data",
+  "footer.legalNotices.personalData.text": "This site does not collect any personal data. The information gathered is solely intended for managing your requests and will not be used for commercial purposes.",
+  "footer.legalNotices.cookies.title": "6. Cookies",
+  "footer.legalNotices.cookies.text": "This site does not use cookies."
+}

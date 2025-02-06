@@ -4,11 +4,14 @@ import cross from "../../../assets/modalIcons/cross.png";
 import gitHubLogo from "../../../assets/modalIcons/gitHubLogo.png";
 import ModalDropdown from "../../dropdowns/modalDropdown/ModalDropdown";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ProjectModal({ project, isOpen, onClose }) {
   const [isClosing, setIsClosing] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null); // Etat pour l'image sélectionnée
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+
+  const { t } = useTranslation();
 
   const handleClose = () => {
     setIsClosing(true);
@@ -56,18 +59,18 @@ export default function ProjectModal({ project, isOpen, onClose }) {
             <img src={project.mainImageInScreen} alt="Ecran d'ordinateur" />
           </div>
           <h3>
-            Projet <br /> <br /> {project.name}
+            Projet <br /> <br /> {t(`projects.${project.key}.name`)}
           </h3>
         </div>
         <div className="modal-body">
           <ModalDropdown title="Description">
-            <p>{project.detailedDescription}</p>
+            <p>{t(`projects.${project.key}.detailedDescription`)}</p>
           </ModalDropdown>
           <hr />
           <ModalDropdown title="Compétences">
             <ul className="skills">
               {project.skills.map((skill, index) => (
-                <li key={index}>{skill}</li>
+                <li key={index}>{t(`projectSkills.${skill}`)}</li>
               ))}
             </ul>
           </ModalDropdown>

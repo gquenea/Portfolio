@@ -2,8 +2,10 @@ import React, { useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import emailjs from "@emailjs/browser";
 import "./ContactForm.scss";
+import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
+  const { t } = useTranslation();
   const form = useRef();
   const [message, setMessage] = useState("");
   const [messageType, setMessageType] = useState("");
@@ -18,20 +20,20 @@ export default function ContactForm() {
       })
       .then(
         () => {
-          setMessage("Votre message a été envoyé avec succès !");
+          setMessage(t("contact.form.successMessage"));
           setMessageType("success");
           setIsVisible(true);
           form.current.reset();
           setTimeout(() => {
-            setIsVisible(false); // Cache la popup après 3 secondes
+            setIsVisible(false);
           }, 3000);
         },
         (error) => {
-          setMessage("Une erreur est survenue. Veuillez réessayer plus tard.");
+          setMessage(t("contact.form.errorMessage"));
           setMessageType("error");
           setIsVisible(true);
           setTimeout(() => {
-            setIsVisible(false); // Cache la popup après 3 secondes
+            setIsVisible(false);
           }, 3000);
         }
       );
@@ -43,19 +45,28 @@ export default function ContactForm() {
       <div className={`popup ${type} ${isVisible ? "visible" : ""}`}>
         {message}
       </div>,
-      document.getElementById("portal-root") // Render inside portal-root
+      document.getElementById("portal-root")
     );
 
   return (
     <div id="contactForm">
       <form ref={form} onSubmit={sendEmail}>
         <label className="visually-hidden">Name</label>
-        <input type="text" name="user_name" placeholder="Nom" required />
+        <input
+          type="text"
+          name="user_name"
+          placeholder={t("contact.form.name")}
+          required
+        />
         <label className="visually-hidden">Email</label>
         <input type="email" name="user_email" placeholder="Email" required />
         <label className="visually-hidden">Message</label>
         <textarea name="message" placeholder="Message" required />
-        <input className="submit" type="submit" value="Envoyer" />
+        <input
+          className="submit"
+          type="submit"
+          value={t("contact.form.send")}
+        />
       </form>
 
       {/* Render the popup if there is a message */}

@@ -4,11 +4,15 @@ import "./Projects.scss";
 import ProjectCard from "./projectCard/ProjectCard.jsx";
 import projects from "../../data/projects";
 import ProjectModal from "./projectModal/ProjectModal.jsx";
+import { useTranslation } from "react-i18next";
+
 
 export default function Projects({ aos }) {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+
+  const { t } = useTranslation();
 
   Modal.setAppElement("#root");
 
@@ -29,7 +33,7 @@ export default function Projects({ aos }) {
 
   return (
     <div id="projects" data-aos={aos}>
-      <h2>Projets</h2>
+      <h2>{t("projects.title")}</h2>
       <div className="cards-container">
         {projects.map((project, index) => (
           <div

@@ -4,8 +4,12 @@ import contactLocalisation from "../../assets/contactLogo/contactLocalisation.pn
 import github from "../../assets/contactLogo/github.png";
 import cv from "../../assets/contactLogo/cv.png";
 import linkedin from "../../assets/contactLogo/linkedin.png";
+import { useTranslation } from "react-i18next";
+
 
 export default function Contact({ aos }) {
+  const { t } = useTranslation();
+
   return (
     <div id="contact" data-aos={aos}>
       <h2>Contact</h2>
@@ -38,8 +42,8 @@ export default function Contact({ aos }) {
         >
           <img src={cv} alt="Icon de cv" />
           <p>
-            Télécharger
-            <br /> mon CV
+          {t("contact.download")}
+            <br /> {t("contact.cv")}
           </p>
         </a>
         <a

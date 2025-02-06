@@ -1,8 +1,12 @@
 import "./Footer.scss";
 import { useState } from "react";
 import LegalNoticesModal from "./legalNoticesModal/LegalNoticesModal";
+import { useTranslation } from "react-i18next";
+
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -16,7 +20,7 @@ export default function Footer() {
   return (
     <div id="footer">
       <p onClick={openModal}>
-        © 2024 Quenea Gislain. Tous droits réservés. Mentions légales
+      {t("footer")}
       </p>
       <LegalNoticesModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
