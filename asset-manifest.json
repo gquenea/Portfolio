@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "//gquenea.github.io/portfolio/static/css/main.b550d493.css",
-    "main.js": "//gquenea.github.io/portfolio/static/js/main.ecaf02c0.js",
+    "main.css": "//gquenea.github.io/portfolio/static/css/main.3c55f0e1.css",
+    "main.js": "//gquenea.github.io/portfolio/static/js/main.1697a36b.js",
     "static/media/gallery2.webp": "//gquenea.github.io/portfolio/static/media/gallery2.9540f00b0b35a39a1daf.webp",
     "static/media/gallery1.webp": "//gquenea.github.io/portfolio/static/media/gallery1.6552d592bb6218a33cba.webp",
     "static/media/gallery5.webp": "//gquenea.github.io/portfolio/static/media/gallery5.2ce7ad5711e2e97c45cc.webp",
     "static/media/gallery3.webp": "//gquenea.github.io/portfolio/static/media/gallery3.05422d06dabb5d44720f.webp",
     "static/media/mainImage.webp": "//gquenea.github.io/portfolio/static/media/mainImage.e5963d056ec903fcaf7e.webp",
-    "static/media/imageInScreen.webp": "//gquenea.github.io/portfolio/static/media/imageInScreen.8156f867d1dacd07abd0.webp",
+    "static/media/darkImageInScreen.webp": "//gquenea.github.io/portfolio/static/media/darkImageInScreen.8156f867d1dacd07abd0.webp",
+    "static/media/lightImageInScreen.webp": "//gquenea.github.io/portfolio/static/media/lightImageInScreen.6c992b1489cb24698ebc.webp",
     "static/media/gallery4.webp": "//gquenea.github.io/portfolio/static/media/gallery4.5497af9c9703e981e603.webp",
     "static/media/hbLogo.webp": "//gquenea.github.io/portfolio/static/media/hbLogo.3189493b1ccff6769af3.webp",
+    "static/media/bannerLight.webp": "//gquenea.github.io/portfolio/static/media/bannerLight.87ee83c64c5742526c1e.webp",
     "static/media/banner.webp": "//gquenea.github.io/portfolio/static/media/banner.eefbcf0694702c2ed454.webp",
     "static/media/ocrLogo.webp": "//gquenea.github.io/portfolio/static/media/ocrLogo.566f5955219bb517bc68.webp",
     "static/media/dtekLogo.webp": "//gquenea.github.io/portfolio/static/media/dtekLogo.485e1907dae88ff8999d.webp",
     "static/media/lamsterLogo.webp": "//gquenea.github.io/portfolio/static/media/lamsterLogo.98d93ea7e4f3de8ee4eb.webp",
     "index.html": "//gquenea.github.io/portfolio/index.html",
-    "main.b550d493.css.map": "//gquenea.github.io/portfolio/static/css/main.b550d493.css.map",
-    "main.ecaf02c0.js.map": "//gquenea.github.io/portfolio/static/js/main.ecaf02c0.js.map"
+    "static/media/dropdownArrow.svg": "//gquenea.github.io/portfolio/static/media/dropdownArrow.ab52c97c10b42dc6ad544ee3f433baf1.svg",
+    "main.3c55f0e1.css.map": "//gquenea.github.io/portfolio/static/css/main.3c55f0e1.css.map",
+    "main.1697a36b.js.map": "//gquenea.github.io/portfolio/static/js/main.1697a36b.js.map"
   },
   "entrypoints": [
-    "static/css/main.b550d493.css",
-    "static/js/main.ecaf02c0.js"
+    "static/css/main.3c55f0e1.css",
+    "static/js/main.1697a36b.js"
   ]
 }
