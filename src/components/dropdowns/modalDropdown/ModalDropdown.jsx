@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./ModalDropdown.scss";
-import dropdownArrow from "../../../assets/dropdownIcons/dropdownArrow.png";
+import dropdownArrow from "../../../assets/dropdownIcons/dropdownArrow.svg";
 
 export default function ModalDropdown({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);

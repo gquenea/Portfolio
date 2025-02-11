@@ -1,10 +1,12 @@
+@import '../../../assets/styles/variables';
+
 .projectCard {
     background-color: #201f23;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
   
     &.faded {
       opacity: 0.5;
@@ -37,6 +39,7 @@
     h3 {
       font-size: 1.5em;
       margin: 0;
+      color: white;
     }
   
     p {

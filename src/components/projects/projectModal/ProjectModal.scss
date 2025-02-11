@@ -2,7 +2,7 @@
 
 .modal-content {
   position: relative;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   padding: 40px 40px 40px 50px;
   border-radius: 10px;
   width: 700px;
@@ -107,7 +107,7 @@
   }
 
   .close-button {
-    background-color: $primary-color;
+    background-color: var(--primary-color);
     border: none;
     cursor: pointer;
     display: flex;
@@ -212,7 +212,7 @@
 
       
       .close-button {
-        background-color: #030203;
+        background-color: rgba(0, 0, 0, 0);
         border: none;
         cursor: pointer;
         transition: opacity 0.3s ease;

@@ -1,3 +1,14 @@
 $primary-color: #1A191D;
 $secondary-color: #FBD6A9;
 $light-blue-color: #66D9ED;
+
+:root {
+    --primary-color: #1A191D;
+    --text-color: white
+  }
+  
+  .light {
+    --primary-color: white;
+    --text-color: black
+
+  }

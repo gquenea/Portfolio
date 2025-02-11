@@ -5,11 +5,11 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
-  background-color: rgba(26, 25, 29, 1);
+  background-color: var(--primary-color);
   position: relative;
   top: 0;
   width: 100%;
-  transition: top 0.5s ease, background-color 0.5s ease;
+  transition: top 0.3s ease;
   height: 100%;
   z-index: 10;
 
@@ -35,7 +35,7 @@
       z-index: 10;
 
       .point {
-        color: white;
+        color: var(--text-color);
       }
 
       .underscore {
@@ -125,8 +125,8 @@
       flex-direction: column;
       position: fixed;
       top: 140px;
-      background-color: $primary-color;
-      border-radius: 10px;
+      background-color: var(--primary-color);
+      border-radius: 0 0 10px 10px;
       box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
       width: 100%;
       padding: 20px 0;

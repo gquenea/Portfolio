@@ -2,8 +2,8 @@
 
 body {
   margin: 0;
-  background-color: $primary-color;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -37,7 +37,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-  background: $primary-color;
+  background: var(--primary-color);
   border-radius: 10px;
 }
 

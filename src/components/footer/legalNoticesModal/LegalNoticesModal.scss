@@ -2,7 +2,7 @@
 
 .legal-notices-modal {
     position: relative;
-    background-color: $primary-color;
+    background-color: var(--primary-color);
     padding: 40px 40px 40px 50px;
     border-radius: 10px;
     width: 700px;
@@ -29,7 +29,7 @@
   }
   
   .legal-notices-modal::-webkit-scrollbar-track {
-    background: $primary-color;
+    background: var(--primary-color);
     border-radius: 10px;
   }
 
@@ -51,7 +51,7 @@
     justify-content: right;
 
     .close-button {
-      background-color: $primary-color;
+      background-color: var(--primary-color);
       border: none;
       cursor: pointer;
       float: right;

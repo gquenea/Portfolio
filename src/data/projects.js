@@ -6,7 +6,8 @@ const projects = [
   {
     key: "booki",
     mainImage: mainImages.bookiMainImage,
-    mainImageInScreen: imagesInScreen.bookiImageInScreen,
+    darkImageInScreen: imagesInScreen.darkBookiImageInScreen,
+    lightImageInScreen: imagesInScreen.lightBookiImageInScreen,
     gitHubLink: "https://github.com/gquenea/Booki",
     galleryImages: [galleryImages.bookiGallery1, galleryImages.bookiGallery2],
     skills: ["HTML", "CSS"],
@@ -14,7 +15,8 @@ const projects = [
   {
     key: "ecoBlissBath",
     mainImage: mainImages.ecoBlissBathMainImage,
-    mainImageInScreen: imagesInScreen.ecoBlissBathImageInScreen,
+    darkImageInScreen: imagesInScreen.darkEcoBlissBathImageInScreen,
+    lightImageInScreen: imagesInScreen.lightEcoBlissBathImageInScreen,
     gitHubLink: "https://github.com/gquenea/EcoBlissBath",
     galleryImages: [
       galleryImages.ecoBlissBathGallery1,
@@ -32,7 +34,8 @@ const projects = [
   {
     key: "kasa",
     mainImage: mainImages.kasaMainImage,
-    mainImageInScreen: imagesInScreen.kasaImageInScreen,
+    darkImageInScreen: imagesInScreen.darkKasaImageInScreen,
+    lightImageInScreen: imagesInScreen.lightKasaImageInScreen,
     gitHubLink: "https://github.com/gquenea/Kasa",
     galleryImages: [
       galleryImages.kasaGallery1,
@@ -44,7 +47,8 @@ const projects = [
   {
     key: "sophieBluel",
     mainImage: mainImages.sophieBluelMainImage,
-    mainImageInScreen: imagesInScreen.sophieBluelImageInScreen,
+    darkImageInScreen: imagesInScreen.darkSophieBluelImageInScreen,
+    lightImageInScreen: imagesInScreen.lightSophieBluelImageInScreen,
     gitHubLink: "https://github.com/gquenea/Sophie-Bluel",
     galleryImages: [
       galleryImages.sophieBluelGallery1,
@@ -57,7 +61,8 @@ const projects = [
   {
     key: "menuMaker",
     mainImage: mainImages.menuMakerMainImage,
-    mainImageInScreen: imagesInScreen.menuMakerImageInScreen,
+    darkImageInScreen: imagesInScreen.darkMenuMakerImageInScreen,
+    lightImageInScreen: imagesInScreen.lightMenuMakerImageInScreen,
     gitHubLink: "https://github.com/gquenea/Menu-Maker",
     galleryImages: [
       galleryImages.menuMakerGallery1,
@@ -66,15 +71,16 @@ const projects = [
       galleryImages.menuMakerGallery4,
     ],
     skills: [
-        "Veille technologique",
-        "Spécifications techniques",
-        "Outils de gestion de développement (Trello)"
-      ],
+      "Veille technologique",
+      "Spécifications techniques",
+      "Outils de gestion de développement (Trello)",
+    ],
   },
   {
     key: "theDojo",
     mainImage: mainImages.theDojoMainImage,
-    mainImageInScreen: imagesInScreen.theDojoImageInScreen,
+    darkImageInScreen: imagesInScreen.darkTheDojoImageInScreen,
+    lightImageInScreen: imagesInScreen.lightTheDojoImageInScreen,
     gitHubLink: "https://github.com/gquenea/the-dojo",
     galleryImages: [
       galleryImages.theDojoGallery1,
@@ -86,7 +92,8 @@ const projects = [
   {
     key: "myMoney",
     mainImage: mainImages.myMoneyMainImage,
-    mainImageInScreen: imagesInScreen.myMoneyImageInScreen,
+    darkImageInScreen: imagesInScreen.darkMyMoneyImageInScreen,
+    lightImageInScreen: imagesInScreen.lightMyMoneyImageInScreen,
     gitHubLink: "https://github.com/gquenea/my-money",
     galleryImages: [
       galleryImages.myMoneyGallery1,
@@ -97,7 +104,8 @@ const projects = [
   {
     key: "magicMemory",
     mainImage: mainImages.magicMemoryMainImage,
-    mainImageInScreen: imagesInScreen.magicMemoryImageInScreen,
+    darkImageInScreen: imagesInScreen.darkMagicMemoryImageInScreen,
+    lightImageInScreen: imagesInScreen.lightMagicMemoryImageInScreen,
     gitHubLink: "https://github.com/gquenea/magic-memory",
     galleryImages: [
       galleryImages.magicMemoryGallery1,

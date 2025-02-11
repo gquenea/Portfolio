@@ -10,6 +10,7 @@ import Footer from "./components/footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { ThemeProvider } from "./components/context/ThemeContext";
 
 function App() {
   useEffect(() => {
@@ -22,20 +23,22 @@ function App() {
   }, []);
 
   return (
-    <div id="App">
-      <div className="header-and-banner">
-        <Header />
-        <Banner />
+    <ThemeProvider>
+      <div id="App">
+        <div className="header-and-banner">
+          <Header />
+          <Banner />
+        </div>
+        <main className="main-container">
+          <Presentation aos="fade-up" />
+          <Skills aos="fade-up" />
+          <Projects aos="fade-up" />
+          <Experiences aos="fade-up" />
+          <Contact aos="fade-up" />
+        </main>
+        <Footer />
       </div>
-      <main className="main-container">
-        <Presentation aos="fade-up" />
-        <Skills aos="fade-up" />
-        <Projects aos="fade-up" />
-        <Experiences aos="fade-up" />
-        <Contact aos="fade-up" />
-      </main>
-      <Footer />
-    </div>
+    </ThemeProvider>
   );
 }
 

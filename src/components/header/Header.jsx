@@ -1,15 +1,17 @@
 import "./Header.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import burgerMenu from "../../assets/burgerMenu.png";
 import { useTranslation } from "react-i18next";
 import engFlag from "../../assets/engFlag.png";
 import frFlag from "../../assets/frFlag.png";
+import { ThemeContext } from "../context/ThemeContext"; // Import du contexte
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isScrollStarted, setIsScrollStarted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // État du burger menu
   const [isEnglish, setIsEnglish] = useState(false);
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   const { t, i18n } = useTranslation();
 
@@ -31,6 +33,11 @@ export default function Header() {
     i18n.changeLanguage(localStorage.getItem("language") || "fr");
     setIsEnglish(i18n.language === "en");
   }, [i18n]);
+
+  useEffect(() => {
+    document.body.classList.toggle("dark", theme === "dark");
+    document.body.classList.toggle("light", theme === "light");
+  }, [theme]);
 
   const handleClick = () => {
     window.location.href = "/";
@@ -97,6 +104,9 @@ export default function Header() {
           onClick={toggleMenu}
         >
           <img src={burgerMenu} alt="Burger menu" />
+        </button>
+        <button onClick={toggleTheme}>
+          {theme === "light" ? "🌙 Dark Mode" : "🌞 Light Mode"}
         </button>
       </div>
     </div>
