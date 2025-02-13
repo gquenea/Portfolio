@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "//gquenea.github.io/portfolio/static/css/main.58135b45.css",
-    "main.js": "//gquenea.github.io/portfolio/static/js/main.56b66fb0.js",
+    "main.js": "//gquenea.github.io/portfolio/static/js/main.38ed3622.js",
     "static/media/gallery2.webp": "//gquenea.github.io/portfolio/static/media/gallery2.9540f00b0b35a39a1daf.webp",
     "static/media/gallery1.webp": "//gquenea.github.io/portfolio/static/media/gallery1.6552d592bb6218a33cba.webp",
     "static/media/gallery5.webp": "//gquenea.github.io/portfolio/static/media/gallery5.2ce7ad5711e2e97c45cc.webp",
@@ -19,10 +19,10 @@
     "index.html": "//gquenea.github.io/portfolio/index.html",
     "static/media/dropdownArrow.svg": "//gquenea.github.io/portfolio/static/media/dropdownArrow.ab52c97c10b42dc6ad544ee3f433baf1.svg",
     "main.58135b45.css.map": "//gquenea.github.io/portfolio/static/css/main.58135b45.css.map",
-    "main.56b66fb0.js.map": "//gquenea.github.io/portfolio/static/js/main.56b66fb0.js.map"
+    "main.38ed3622.js.map": "//gquenea.github.io/portfolio/static/js/main.38ed3622.js.map"
   },
   "entrypoints": [
     "static/css/main.58135b45.css",
-    "static/js/main.56b66fb0.js"
+    "static/js/main.38ed3622.js"
   ]
 }
