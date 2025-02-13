@@ -1,4 +1,4 @@
-@import '../../../assets/styles/variables';
+@import '../../../assets/styles/variables.scss';
 
 .modal-content {
   position: relative;
@@ -6,7 +6,7 @@
   padding: 40px 40px 40px 50px;
   border-radius: 10px;
   width: 700px;
-  height: 850px;
+  height: 70%;
   outline: none;
   overflow-y: auto;
   scrollbar-gutter: stable;
@@ -59,11 +59,11 @@
 
 @keyframes scaleIn {
   from {
-    transform: scale(0); /* Point invisible */
+    transform: scale(0);
     opacity: 0;
   }
   to {
-    transform: scale(1); /* Taille normale */
+    transform: scale(1);
     opacity: 1;
   }
 }
@@ -74,7 +74,7 @@
     opacity: 1;
   }
   to {
-    transform: scale(0); /* Réduit à un point */
+    transform: scale(0);
     opacity: 0;
   }
 }
@@ -153,20 +153,20 @@
 }
 
 .modal-content::-webkit-scrollbar {
-  width: 10px; /* Largeur de la scrollbar */
+  width: 10px;
 }
 .modal-content::-webkit-scrollbar-thumb {
-  background: #5c6162; /* Couleur de la barre de défilement */
-  border-radius: 10px; /* Coins arrondis */
+  background: #5c6162;
+  border-radius: 10px;
 }
 
 .modal-content::-webkit-scrollbar-thumb:hover {
-  background: #46494a; /* Couleur au survol */
+  background: #46494a;
 }
 
 .modal-content::-webkit-scrollbar-track {
-  background: $primary-color; /* Couleur de l'arrière-plan de la scrollbar */
-  border-radius: 10px; /* Coins arrondis */
+  background: $primary-color;
+  border-radius: 10px;
 }
 
 .gallery-image {
@@ -191,17 +191,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;  /* Cela garantit que l'overlay couvre toute la page */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 10; /* Assure-toi que la modal soit au-dessus des autres éléments */
+  z-index: 10;
 
   .image-modal-content {
     position: relative;
-    max-width: 100%; /* Limite la taille de l'image */
-    max-height: 100%; /* Limite la hauteur de l'image */
+    max-width: 100%;
+    max-height: 100%;
     margin: auto;
     border-radius: 8px;
 

@@ -1,26 +1,29 @@
 import "./App.scss";
-import Banner from "./components/banner/Banner";
-import Header from "./components/header/Header";
-import Presentation from "./components/presentation/Presentation";
-import Skills from "./components/skills/Skills";
-import Projects from "./components/projects/Projects";
-import Experiences from "./components/experiences/Experciences";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
+import Banner from "./components/banner/Banner.jsx";
+import Header from "./components/header/Header.jsx";
+import Presentation from "./components/presentation/Presentation.jsx";
+import Skills from "./components/skills/Skills.jsx";
+import Projects from "./components/projects/Projects.jsx";
+import Experiences from "./components/experiences/Experciences.jsx";
+import Contact from "./components/contact/Contact.jsx";
+import Footer from "./components/footer/Footer.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { ThemeProvider } from "./components/context/ThemeContext";
+import { ThemeProvider } from "./components/context/ThemeContext.jsx";
+import Modal from "react-modal";
 
 function App() {
   useEffect(() => {
-    // Initialisation d'AOS
+
     AOS.init({
-      duration: 700, // Durée de l'animation en ms
-      easing: "ease-in-out", // Type d'animation
-      once: true, // L'animation se déclenche uniquement une fois
+      duration: 700,
+      easing: "ease-in-out", 
+      once: false,
     });
   }, []);
+
+  Modal.setAppElement("#root");
 
   return (
     <ThemeProvider>

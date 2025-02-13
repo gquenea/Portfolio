@@ -1,6 +1,6 @@
-import mainImages from "./imports/mainImages";
-import imagesInScreen from "./imports/imagesInScreen";
-import galleryImages from "./imports/galleryimages";
+import mainImages from "./imports/mainImages.js";
+import imagesInScreen from "./imports/imagesInScreen.js";
+import galleryImages from "./imports/galleryimages.js";
 
 const projects = [
   {
@@ -42,7 +42,7 @@ const projects = [
       galleryImages.kasaGallery2,
       galleryImages.kasaGallery3,
     ],
-    skills: ["HTML", "CSS", "React", "Gestion de version"],
+    skills: ["HTML", "CSS", "React", "Versionning"],
   },
   {
     key: "sophieBluel",

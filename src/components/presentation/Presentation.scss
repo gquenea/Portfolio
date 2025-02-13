@@ -7,13 +7,13 @@
     }
 
     .quote-right {
-        float: right; /* Place l'image à droite */
+        float: right;
       }
 
       &::after {
           content: "";
           display: table;
-          clear: both; /* Nettoie le flottement pour que le texte suivant ne soit pas affecté */
+          clear: both;
         }
 }
 

@@ -1,11 +1,9 @@
 import { useState } from "react";
-import Modal from "react-modal";
 import "./Projects.scss";
 import ProjectCard from "./projectCard/ProjectCard.jsx";
-import projects from "../../data/projects";
+import projects from "../../data/projects.js";
 import ProjectModal from "./projectModal/ProjectModal.jsx";
 import { useTranslation } from "react-i18next";
-
 
 export default function Projects({ aos }) {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -14,7 +12,6 @@ export default function Projects({ aos }) {
 
   const { t } = useTranslation();
 
-  Modal.setAppElement("#root");
 
   const handleMouseEnter = (index) => {
     setHoveredIndex(index);
@@ -55,7 +52,7 @@ export default function Projects({ aos }) {
 
       {/* Modal */}
       <ProjectModal
-        isOpen={isModalOpen}
+        isModalOpen={isModalOpen}
         onClose={closeModal}
         project={selectedProject}
       />

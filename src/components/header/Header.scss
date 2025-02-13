@@ -1,4 +1,4 @@
-@import '../../assets/styles/variables';
+@import '../../assets/styles/variables.scss';
 
 #header {
   display: flex;
@@ -7,7 +7,6 @@
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
   background-color: var(--primary-color);
   position: relative;
-  top: 0;
   width: 100%;
   transition: top 0.3s ease;
   height: 100%;
@@ -33,6 +32,9 @@
       cursor: pointer;
       transition: filter 0.3s ease;
       z-index: 10;
+      &:hover {
+        filter: brightness(0.7);
+      }
 
       .point {
         color: var(--text-color);
@@ -41,10 +43,6 @@
       .underscore {
         color: #9B37FF;
       }
-    }
-
-    div:hover {
-      filter: brightness(0.7);
     }
 
     nav {
@@ -80,7 +78,7 @@
     .burger-menu {
       all: unset;
       cursor: pointer;
-      margin-right: 100px;
+      margin-right: 50px;
       display: none;
       z-index: 10;
     }
@@ -90,13 +88,23 @@
   height: 140px;
 }
 
-.toggle-language{
+.toggle-container {
   position: absolute;
   top: 20px;
   right: 20px;
-  cursor: pointer;
-}
 
+  .flex-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .toggle-language{
+      cursor: pointer;
+    }
+  }
+}
 
 @media (max-width: 1800px) {
   .name {
@@ -104,10 +112,35 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .toggle-container {
+    position: static;
+    margin-right: 20px;
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
 @media (max-width: 920px) {
   .name {
-    display: flex;
+    display: none;
   }
+
+  .toggle-container {
+    position: absolute;
+    left: 40px;
+    .flex-container {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: start;
+      gap: 40px;
+      
+    }
+ }
 }
 
 @media (max-width: 920px) {

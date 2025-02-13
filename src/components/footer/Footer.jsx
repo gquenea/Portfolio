@@ -1,6 +1,6 @@
 import "./Footer.scss";
 import { useState } from "react";
-import LegalNoticesModal from "./legalNoticesModal/LegalNoticesModal";
+import LegalNoticesModal from "./legalNoticesModal/LegalNoticesModal.jsx";
 import { useTranslation } from "react-i18next";
 
 

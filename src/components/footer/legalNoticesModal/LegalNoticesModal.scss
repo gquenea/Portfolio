@@ -1,4 +1,4 @@
-@import '../../../assets/styles/variables';
+@import '../../../assets/styles/variables.scss';
 
 .legal-notices-modal {
     position: relative;
@@ -6,7 +6,7 @@
     padding: 40px 40px 40px 50px;
     border-radius: 10px;
     width: 700px;
-    height: 850px;
+    height: 70vh;
     outline: none;
     overflow-y: auto;
     scrollbar-gutter: stable;

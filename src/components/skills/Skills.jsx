@@ -1,6 +1,6 @@
 import "./Skills.scss";
 import SkillCard from "./skillCard/SkillCard.jsx";
-import skills from "../../data/skills";
+import skills from "../../data/skills.js";
 import { useTranslation } from "react-i18next";
 
 

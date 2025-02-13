@@ -4,14 +4,15 @@ import burgerMenu from "../../assets/burgerMenu.png";
 import { useTranslation } from "react-i18next";
 import engFlag from "../../assets/engFlag.png";
 import frFlag from "../../assets/frFlag.png";
-import { ThemeContext } from "../context/ThemeContext"; // Import du contexte
+import { ThemeContext } from "../context/ThemeContext.jsx";
+import ToggleSwitch from "../toggleSwitch/ToggleSwitch.jsx";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isScrollStarted, setIsScrollStarted] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // État du burger menu
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isEnglish, setIsEnglish] = useState(false);
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   const { t, i18n } = useTranslation();
 
@@ -40,7 +41,7 @@ export default function Header() {
   }, [theme]);
 
   const handleClick = () => {
-    window.location.href = "/";
+    window.location.reload();
   };
 
   const toggleMenu = () => {
@@ -90,23 +91,27 @@ export default function Header() {
               <a href="#contact">{t("header.nav.contact")}</a>
             </li>
           </ul>
-          <img
-            onClick={toggleLanguage}
-            className="toggle-language"
-            src={isEnglish ? frFlag : engFlag}
-            alt="Drapeau de langue"
-          />
         </nav>
 
-        {/* Bouton burger */}
+        <div className="toggle-container">
+          <div className="flex-container">
+            <div className="toggle-theme">
+              <ToggleSwitch />
+            </div>
+            <img
+              onClick={toggleLanguage}
+              className="toggle-language"
+              src={isEnglish ? engFlag : frFlag}
+              alt="Drapeau de langue"
+            />
+          </div>
+        </div>
+        {/* Burger button */}
         <button
           className={`burger-menu ${isMenuOpen ? "open" : ""}`}
           onClick={toggleMenu}
         >
           <img src={burgerMenu} alt="Burger menu" />
-        </button>
-        <button onClick={toggleTheme}>
-          {theme === "light" ? "🌙 Dark Mode" : "🌞 Light Mode"}
         </button>
       </div>
     </div>

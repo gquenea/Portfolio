@@ -1,6 +1,6 @@
-import ExperienceDropdown from "../dropdowns/experienceDropdown/ExperienceDropdown";
+import ExperienceDropdown from "../dropdowns/experienceDropdown/ExperienceDropdown.jsx";
 import "./Experiences.scss";
-import experiences from "../../data/experiences";
+import experiences from "../../data/experiences.js";
 import { useTranslation } from "react-i18next";
 
 export default function Experiences({ aos }) {

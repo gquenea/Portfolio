@@ -1,11 +1,10 @@
 import "./Contact.scss";
-import ContactForm from "../contactForm/ContactForm";
+import ContactForm from "../contactForm/ContactForm.jsx";
 import contactLocalisation from "../../assets/contactLogo/contactLocalisation.png";
 import github from "../../assets/contactLogo/github.png";
 import cv from "../../assets/contactLogo/cv.png";
 import linkedin from "../../assets/contactLogo/linkedin.png";
 import { useTranslation } from "react-i18next";
-
 
 export default function Contact({ aos }) {
   const { t } = useTranslation();

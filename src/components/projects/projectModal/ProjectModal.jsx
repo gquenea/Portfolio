@@ -2,14 +2,14 @@ import ReactModal from "react-modal";
 import "./ProjectModal.scss";
 import cross from "../../../assets/modalIcons/cross.png";
 import gitHubLogo from "../../../assets/modalIcons/gitHubLogo.png";
-import ModalDropdown from "../../dropdowns/modalDropdown/ModalDropdown";
+import ModalDropdown from "../../dropdowns/modalDropdown/ModalDropdown.jsx";
 import { useState, useContext } from "react";
 import { useTranslation } from "react-i18next";
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext.jsx";
 
-export default function ProjectModal({ project, isOpen, onClose }) {
+export default function ProjectModal({ project, isModalOpen, onClose }) {
   const [isClosing, setIsClosing] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null); // Etat pour l'image sélectionnée
+  const [selectedImage, setSelectedImage] = useState(null);
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const { theme } = useContext(ThemeContext);
 
@@ -20,16 +20,16 @@ export default function ProjectModal({ project, isOpen, onClose }) {
     setTimeout(() => {
       setIsClosing(false);
       onClose();
-    }, 400); // La durée doit correspondre à celle de l'animation
+    }, 400);
   };
 
   const handleImageClick = (image) => {
-    setSelectedImage(image); // Définir l'image sélectionnée
-    setIsImageModalOpen(true); // Ouvrir la modal de l'image
+    setSelectedImage(image);
+    setIsImageModalOpen(true);
   };
 
   const handleImageModalClose = () => {
-    setIsImageModalOpen(false); // Fermer la modal de l'image
+    setIsImageModalOpen(false);
   };
 
   const imageInScreen =
@@ -41,7 +41,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
   return (
     <>
       <ReactModal
-        isOpen={isOpen}
+        isOpen={isModalOpen}
         onRequestClose={handleClose}
         className={`modal-content ${isClosing ? "closing" : ""}`}
         overlayClassName={`modal-overlay ${isClosing ? "closing" : ""}`}
@@ -97,7 +97,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
         </div>
       </ReactModal>
 
-      {/* Modal pour afficher l'image en grand */}
+      {/* Image modal */}
       <ReactModal
         isOpen={isImageModalOpen}
         onRequestClose={handleImageModalClose}

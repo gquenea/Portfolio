@@ -15,7 +15,7 @@ import lightMyMoneyImageInScreen from "../../assets/projectsPictures/myMoney/lig
 import darkMagicMemoryImageInScreen from "../../assets/projectsPictures/magicMemory/darkImageInScreen.webp";
 import lightMagicMemoryImageInScreen from "../../assets/projectsPictures/magicMemory/lightImageInScreen.webp";
 
-const imagesInScreen = {
+const imageInScreen = {
   darkBookiImageInScreen,
   lightBookiImageInScreen,
   darkEcoBlissBathImageInScreen,
@@ -34,4 +34,4 @@ const imagesInScreen = {
   lightMagicMemoryImageInScreen,
 };
 
-export default imagesInScreen;
+export default imageInScreen;
