@@ -34,14 +34,14 @@ export default function Contact({ aos }) {
           <p>Github</p>
         </a>
         <a
-          href="CV-Quenea-Gislain.pdf"
+          href="/portfolio/cv-quenea-gislain.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="cv"
         >
           <img src={cv} alt="Icon de cv" />
           <p>
-          {t("contact.download")}
+            {t("contact.download")}
             <br /> {t("contact.cv")}
           </p>
         </a>

@@ -13,6 +13,7 @@
     "react-modal": "^3.16.3",
     "react-scripts": "^5.0.1"
   },
+  "homepage": "https://https://gquenea.github.io/portfolio/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
