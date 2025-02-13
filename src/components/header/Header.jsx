@@ -74,9 +74,7 @@ export default function Header() {
         >
           <ul>
             <li>
-              <a href="#header" onClick={handleClick}>
-                {t("header.nav.welcome")}
-              </a>
+              <a href="#banner">{t("header.nav.welcome")}</a>
             </li>
             <li>
               <a href="#skills">{t("header.nav.skills")}</a>

@@ -7,7 +7,7 @@ const skills = [
     key: "testCard",
     underlineColor: "#DF058D",
     icon: testIcon,
-    aos: "fade-up-right",
+    aos: "fade-up",
   },
   {
     key: "devCard",
@@ -19,7 +19,7 @@ const skills = [
     key: "organisationCard",
     underlineColor: "#FF6B2B",
     icon: organisationIcon,
-    aos: "fade-up-left",
+    aos: "fade-up",
   },
 ];
 
